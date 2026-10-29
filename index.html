@@ -333,7 +333,7 @@ h1{font-size:32px}
       <div><h4>Shop</h4><ul>
         <li><a href="#shop" data-jump="pearl">Pearls</a></li>
         <li><a href="#shop" data-jump="waterproof">Waterproof gold</a></li>
-        <li><a href="#shop" data-jump="silver">925 Silver</a></li>
+        <li><a href="#shop" data-jump="silver">Miao &amp; 925 Silver</a></li>
         <li><a href="#shop" data-jump="gemstone">Birthstones</a></li>
         <li><a href="#shop" data-jump="gift">Gifts &amp; under $25</a></li>
       </ul></div>
@@ -377,7 +377,7 @@ h1{font-size:32px}
 const CATS=[
  {id:"pearl",label:"Pearls"},
  {id:"waterproof",label:"Waterproof Gold"},
- {id:"silver",label:"925 Silver"},
+ {id:"silver",label:"Miao & 925 Silver"},
  {id:"gemstone",label:"Birthstones"},
  {id:"gift",label:"Gifts & Under $25"},
  {id:"all",label:"Shop All"}
@@ -387,58 +387,28 @@ const CATS=[
 const PRODUCTS=[
  {id:"p1",cat:"pearl",t:"Layered Pearl & Coin Necklace",tag:"Freshwater pearls on a pre-layered double chain — one clasp, no tangles",price:34,compare:49,img:"assets/img/pearl-flatlay.jpg",badges:["BESTSELLER"]},
  {id:"p2",cat:"pearl",t:"Baroque Pearl Pendant Necklace",tag:"One irregular baroque pearl on a fine gold chain — no two alike",price:27,img:"assets/img/baroque-layered.jpg",badges:["NEW"]},
- {id:"p4",cat:"pearl",t:"Pearl Drop Earrings",tag:"Gold-accented freshwater pearls, weightless on the ear",price:19,img:"assets/img/earrings-lifestyle.jpg"},
- {id:"p5",cat:"pearl",t:"Pearl & Gold Huggie Hoops",tag:"Tiny hoops with a freshwater pearl — stack them, sleep in them",price:17,img:"assets/img/gold-hoops.jpg"},
+ {id:"p3",cat:"pearl",t:"Pearl Drop Earrings",tag:"Gold-accented freshwater pearls, weightless on the ear",price:19,img:"assets/img/earrings-lifestyle.jpg"},
+ {id:"p4",cat:"pearl",t:"Pearl & Gold Huggie Hoops",tag:"Tiny hoops with a freshwater pearl — stack them, sleep in them",price:17,img:"assets/img/gold-hoops.jpg"},
 
  {id:"w1",cat:"waterproof",t:"Waterproof Cuban Chain Necklace",tag:"316L steel core, 18k gold plating — shower, gym, pool, repeat",price:28,img:"assets/img/hero.jpg",badges:["WATERPROOF"]},
  {id:"w2",cat:"waterproof",t:"Paperclip Chain Necklace",tag:"The everyday layering chain that never loses its colour",price:24,img:"assets/img/silver-necklace.jpg",badges:["WATERPROOF"]},
  {id:"w3",cat:"waterproof",t:"Sun & Moon Celestial Necklace",tag:"Sun, moon and star — a celestial classic that never dates",price:26,img:"assets/img/charm-bracelet.jpg",badges:["WATERPROOF"]},
- {id:"w4",cat:"waterproof",t:"Botanical Leaf Pendant",tag:"Nature-inspired pendant on a tarnish-free steel chain",price:22,img:"assets/img/pearl-tassel.jpg",badges:["WATERPROOF"]},
  {id:"w5",cat:"waterproof",t:"Waterproof Gift Set — 3 Pieces",tag:"Necklace + bracelet + ring in one gift box",price:46,compare:72,img:"assets/img/gold-bangles.jpg",badges:["WATERPROOF","SET"]},
  {id:"w6",cat:"waterproof",t:"CZ Pave Stacking Rings — Set of 3",tag:"Stacked sparkle without the stacked price",price:29,img:"assets/img/rings-hands.jpg",badges:["WATERPROOF"]},
- {id:"w7",cat:"waterproof",t:"Everyday Waterproof Bracelet",tag:"Add-a-charm base bracelet, sweat-proof finish",price:19,img:"assets/img/hands-jewelry.jpg",badges:["WATERPROOF"]},
  {id:"w8",cat:"waterproof",t:"Gunmetal Steel Chain",tag:"Black-tone steel — the low-competition alternative finish",price:24,img:"assets/img/seashell-necklace.jpg",badges:["WATERPROOF","NEW"]},
 
- {id:"m1",cat:"silver",t:"Miao Filigree Butterfly Earrings — 925",tag:"Hand-pierced filigree wings in the Miao silversmith tradition",price:32,img:"assets/img/mop-earrings.jpg",badges:["925 SILVER","HANDMADE"]},
- {id:"m2",cat:"silver",t:"Miao Silver Bell Tassel Earrings — 925",tag:"Tiny bells and sterling tassels — a soft chime with every step",price:29,img:"assets/img/gold-earring.jpg",badges:["925 SILVER","HANDMADE"]},
- {id:"m3",cat:"silver",t:"Miao Silver Filigree Bangle — 925",tag:"Open-work filigree cuff, polished bright — heritage craft, daily weight",price:42,img:"assets/img/gold-bangles.jpg",badges:["925 SILVER","HANDMADE"]},
- {id:"m4",cat:"silver",t:"Miao Silver Twist Torque Necklace — 925",tag:"Twisted torque collar with silver loop ends — the statement piece",price:46,img:"assets/img/silver-necklace.jpg",badges:["925 SILVER","HANDMADE"]},
- {id:"m5",cat:"silver",t:"Miao Silver Feather Drop Earrings — 925",tag:"Etched feather drops, light as they look — handmade in Guizhou tradition",price:30,img:"assets/img/gold-earring.jpg",badges:["925 SILVER","HANDMADE"]},
- {id:"m6",cat:"silver",t:"Miao Silver Flower Filigree Ring — 925",tag:"A blossom of fine silver wire, adjustable band",price:26,img:"assets/img/rings-hands.jpg",badges:["925 SILVER","HANDMADE"]},
- {id:"m7",cat:"silver",t:"Miao Silver Chain Tassel Necklace — 925",tag:"Flowing sterling tassels that catch the light when you move",price:44,img:"assets/img/silver-necklace.jpg",badges:["925 SILVER","HANDMADE"]},
- {id:"m8",cat:"silver",t:"Miao Silver Interlock Bangle — 925",tag:"Two interlocking bands — heritage symbolism, modern finish",price:38,img:"assets/img/gold-bangles.jpg",badges:["925 SILVER","HANDMADE"]},
- {id:"m9",cat:"silver",t:"Miao Silver Star Filigree Studs — 925",tag:"Tiny pierced stars for everyday — the gateway piece to the craft",price:26,img:"assets/img/gold-hoops.jpg",badges:["925 SILVER","HANDMADE"]},
- {id:"m10",cat:"silver",t:"Miao Silver Coin Fringe Earrings — 925",tag:"Rows of little silver coins that sway — the signature Miao look",price:34,img:"assets/img/mop-earrings.jpg",badges:["925 SILVER","HANDMADE"]},
- {id:"m11",cat:"silver",t:"Miao Silver Vine Wrap Ring — 925",tag:"A climbing vine wrapped around the finger, hand-shaped",price:26,img:"assets/img/rings-hands.jpg",badges:["925 SILVER","HANDMADE"]},
- {id:"m12",cat:"silver",t:"Lotus Filigree Pendant — 925",tag:"Open-work lotus on a fine sterling chain — quiet, botanical, bold",price:38,img:"assets/img/pearl-pendant.jpg",badges:["925 SILVER","HANDMADE"]},
- {id:"s1",cat:"silver",t:"Turquoise Medallion Necklace — 925",tag:"Boho coin medallion set with turquoise on a sterling chain",price:36,img:"assets/img/pearl-pendant.jpg",badges:["925 SILVER"]},
- {id:"s2",cat:"silver",t:"Hammered Boho Earrings — 925",tag:"Hand-finished texture, featherlight sterling posts",price:30,img:"assets/img/hoops-portrait.jpg",badges:["925 SILVER"]},
- {id:"s4",cat:"silver",t:"Oxidised Wide Cuff — 925",tag:"Antique-finish tribal cuff with a modern weight",price:38,img:"assets/img/hands-jewelry.jpg",badges:["925 SILVER"]},
+ {id:"m1",cat:"silver",t:"Miao Filigree Butterfly Earrings — 925",tag:"Hand-pierced filigree wings in the Miao silversmith tradition",price:32,img:"assets/img/mop-earrings.jpg",badges:["HANDMADE","NEW"]},
+ {id:"m2",cat:"silver",t:"Miao Silver Bell Tassel Earrings — 925",tag:"Tiny bells and sterling tassels — a soft chime with every step",price:29,img:"assets/img/gold-earring.jpg",badges:["HANDMADE"]},
+ {id:"m3",cat:"silver",t:"Miao Silver Filigree Bangle — 925",tag:"Open-work filigree cuff, polished bright — heritage craft, daily weight",price:42,img:"assets/img/hands-jewelry.jpg",badges:["HANDMADE"]},
+ {id:"m4",cat:"silver",t:"Miao Silver Twist Torque Necklace — 925",tag:"Twisted torque collar with silver loop ends — the statement piece",price:46,img:"assets/img/pearl-pendant.jpg",badges:["HANDMADE"]},
+ {id:"m5",cat:"silver",t:"Lotus Filigree Pendant — 925",tag:"Open-work lotus on a fine sterling chain — quiet, botanical, bold",price:38,img:"assets/img/pearl-tassel.jpg",badges:["HANDMADE"]},
+ {id:"m6",cat:"silver",t:"Turquoise Medallion Necklace — 925",tag:"Boho coin medallion set with turquoise on a sterling chain",price:36,img:"assets/img/pearl-dish.jpg",badges:["925 SILVER"]},
 
- {id:"g1",cat:"gemstone",t:"Birthstone Pendant Necklace",tag:"Lab-grown stone for your month — collect all twelve",price:39,from:true,img:"assets/img/pearl-dish.jpg",badges:["LAB-GROWN"]},
- {id:"g2",cat:"gemstone",t:"Lab-Grown Sapphire Studs — 925",tag:"September's stone, honestly priced and honestly labeled",price:44,img:"assets/img/gold-earring.jpg",badges:["LAB-GROWN"]},
- {id:"g3",cat:"gemstone",t:"Lab-Grown Emerald Halo Ring — 925",tag:"Halo-set green stone with a disclosure card in every box",price:55,img:"assets/img/gold-rings.jpg",badges:["LAB-GROWN"]},
- {id:"g4",cat:"gemstone",t:"Lab-Grown Ruby Bracelet",tag:"July red on a sterling tennis line",price:46,img:"assets/img/charm-bracelet.jpg",badges:["LAB-GROWN"]},
- {id:"g5",cat:"gemstone",t:"Four-Leaf Clover Gemstone Necklace",tag:"Lab-grown clover pendant — the classic gift that never dates",price:35,img:"assets/img/pearl-tassel.jpg",badges:["LAB-GROWN"]},
- {id:"g6",cat:"gemstone",t:"Lab-Grown Amethyst Pendant — 925",tag:"February purple on a fine sterling chain — calm in a stone",price:36,img:"assets/img/pearl-pendant.jpg",badges:["LAB-GROWN","NEW"]},
- {id:"g7",cat:"gemstone",t:"Lab-Grown Garnet Stud Earrings — 925",tag:"Deep January red, everyday size — your first fine-gem studs",price:32,img:"assets/img/gold-rings.jpg",badges:["LAB-GROWN","NEW"]},
- {id:"g8",cat:"gemstone",t:"Colourful Gemstone Ear Stack — Set of 3",tag:"Amethyst, garnet and peridot studs — one set, three months",price:42,compare:54,img:"assets/img/earrings-lifestyle.jpg",badges:["LAB-GROWN","NEW"]},
+ {id:"g1",cat:"gemstone",t:"Birthstone Pendant Necklace",tag:"Lab-grown stone for your month — collect all twelve",price:39,from:true,img:"assets/img/baroque-choker.jpg",badges:["LAB-GROWN"]},
+ {id:"g2",cat:"gemstone",t:"Lab-Grown Emerald Halo Ring — 925",tag:"Halo-set green stone with a disclosure card in every box",price:55,img:"assets/img/gold-rings.jpg",badges:["LAB-GROWN"]},
 
- {id:"g9",cat:"gemstone",t:"Lab-Grown Pink Sapphire Pendant — 925",tag:"Soft lotus-pink on sterling — October's alternative stone",price:38,img:"assets/img/pearl-pendant.jpg",badges:["LAB-GROWN","NEW"]},
- {id:"g10",cat:"gemstone",t:"Lab-Grown Aquamarine Studs — 925",tag:"March's sea-blue, clear as glass — a quiet everyday stud",price:34,img:"assets/img/gold-earring.jpg",badges:["LAB-GROWN","NEW"]},
- {id:"g11",cat:"gemstone",t:"Lab-Grown Peridot Pendant — 925",tag:"August's olive green on a fine sterling chain",price:32,img:"assets/img/pearl-tassel.jpg",badges:["LAB-GROWN","NEW"]},
- {id:"g12",cat:"gemstone",t:"Lab-Grown Blue Topaz Drop Earrings — 925",tag:"Sky-blue drops that go with everything you own",price:30,img:"assets/img/earrings-lifestyle.jpg",badges:["LAB-GROWN","NEW"]},
- {id:"g13",cat:"gemstone",t:"Lab-Grown Morganite Heart Pendant — 925",tag:"Blush-pink heart on sterling — the anniversary piece",price:40,img:"assets/img/pearl-dish.jpg",badges:["LAB-GROWN","NEW"]},
- {id:"g14",cat:"gemstone",t:"Lab-Grown Ruby Stud Earrings — 925",tag:"July red in a classic round cut — small but unmistakable",price:36,img:"assets/img/gold-rings.jpg",badges:["LAB-GROWN","NEW"]},
- {id:"g15",cat:"gemstone",t:"Sapphire Tennis Bracelet — Lab-Grown, 925",tag:"A full line of blue — the event piece at an honest price",price:52,compare:68,img:"assets/img/charm-bracelet.jpg",badges:["LAB-GROWN","NEW"]},
- {id:"g16",cat:"gemstone",t:"Family Birthstone Necklace — Custom",tag:"Pick a stone for everyone you love, on one sterling chain",price:52,from:true,img:"assets/img/baroque-choker.jpg",badges:["LAB-GROWN","CUSTOM","NEW"]},
- {id:"y1",cat:"gift",t:"Butterfly Pendant Necklace",tag:"Y2K butterfly with coloured CZ wings",price:17,img:"assets/img/hoops-portrait.jpg"},
- {id:"y2",cat:"gift",t:"Daisy Chain Necklace",tag:"Delicate daisies — Gen Z's favourite starter piece",price:14,img:"assets/img/baroque-choker.jpg"},
- {id:"y3",cat:"gift",t:"Colourful Beaded Bracelet",tag:"Stackable dopamine beads",price:12,img:"assets/img/charm-bracelet.jpg"},
-
- {id:"c1",cat:"gift",t:"Initial Letter Necklace",tag:"Your letter, 26 ways — the evergreen gift",price:26,img:"assets/img/pearl-necklace.jpg"},
- {id:"c2",cat:"gift",t:"Initial × Birthstone Duo Necklace",tag:"Custom letter with a lab-grown birthstone drop",price:36,from:true,img:"assets/img/baroque-choker.jpg",badges:["CUSTOM","LAB-GROWN"]},
- {id:"c3",cat:"gift",t:"Handwriting Bracelet — Custom",tag:"Engraved from a photo of real handwriting",price:32,from:true,img:"assets/img/hands-jewelry.jpg",badges:["CUSTOM"]}
+ {id:"c1",cat:"gift",t:"Initial Letter Necklace",tag:"Your letter, 26 ways — the evergreen personalized gift",price:26,img:"assets/img/pearl-necklace.jpg"},
+ {id:"c2",cat:"gift",t:"Family Birthstone Necklace — Custom",tag:"Pick a lab-grown stone for everyone you love, on one sterling chain",price:52,from:true,img:"assets/img/hoops-portrait.jpg",badges:["LAB-GROWN","CUSTOM"]}
 ];
 const FREE_SHIP=49;
 
