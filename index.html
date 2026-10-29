@@ -1,556 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qinglan Import & Export | Professional China Sourcing Agent</title>
-    <!-- SEO Meta -->
-    <meta name="description" content="Qinglan Import & Export, Guangzhou China sourcing agent. Specialized in auto parts, K tip hair, jewelry and pet supplies. Factory audit, pre-shipment QC & cargo consolidation on FOB terms only.">
-    <meta name="keywords" content="China sourcing agent, Guangzhou sourcing agent, auto parts import, K tip hair vendor, pet products supplier, jewelry sourcing, FOB shipping China, cargo consolidation, China product inspection">
-    <meta name="author" content="Qinglan Import & Export">
-    <link rel="canonical" href="https://qinglan-export.github.io/qinglan/">
-    <!-- OG Tags for WhatsApp / Facebook share -->
-    <meta property="og:title" content="Qinglan Import & Export | Reliable China Sourcing Agent">
-    <meta property="og:description" content="One-stop China sourcing: factory audit, quality inspection, multi-supplier consolidation. All services on FOB basis only.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://qinglan-export.github.io/qinglan/">
-    <meta property="og:image" content="banner.jpg">
-    <meta property="og:locale" content="en_US">
-    <!-- Schema LocalBusiness -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Qinglan Import & Export",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Guangzhou",
-            "addressRegion": "Guangdong",
-            "addressCountry": "CN"
-        },
-        "telephone": "+86 YOUR_PHONE",
-        "email": "yourmail@xxx.com",
-        "url": "https://qinglan-export.github.io/qinglan/",
-        "description": "Guangzhou-based China sourcing agent for auto parts, hair extensions, jewelry and pet goods. Factory audit, pre-shipment QC inspection and cargo consolidation under FOB terms only.",
-        "openingHours": "Mo-Sat 09:00-18:00 CST"
-    }
-    </script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            color: #333;
-            line-height: 1.7;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        img{
-            max-width:100%;
-            height:auto;
-            border-radius:8px;
-        }
-
-        /* Header & Nav */
-        header {
-            background: #1a365d;
-            color: #fff;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 99;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        }
-        .header-wrap {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-        }
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 28px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.25s;
-        }
-        nav a:hover {
-            color: #4299e1;
-        }
-        .hamburger {
-            display: none;
-            font-size: 26px;
-            cursor: pointer;
-        }
-
-        /* Hero */
-        .hero {
-            background: linear-gradient(rgba(26, 54, 93, 0.82), rgba(26, 54, 93, 0.82)), url("banner.jpg");
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            padding: 110px 0;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 46px;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 20px;
-            max-width: 840px;
-            margin: 0 auto 36px;
-        }
-        .btn {
-            display: inline-block;
-            background: #4299e1;
-            color: #fff;
-            padding: 14px 32px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.25s, transform 0.2s;
-        }
-        .btn:hover {
-            background: #3182ce;
-            transform: translateY(-2px);
-        }
-
-        section {
-            padding: 80px 0;
-        }
-        section h2 {
-            text-align: center;
-            font-size: 34px;
-            margin-bottom: 46px;
-            color: #1a365d;
-        }
-
-        /* About */
-        .about-wrap {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-        .about-list p {
-            margin-bottom: 12px;
-            font-size:17px;
-        }
-
-        /* Service Cards with Hover */
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-            gap: 28px;
-        }
-        .service-card {
-            background: #fff;
-            padding: 28px;
-            border-radius: 10px;
-            box-shadow:0 4px 12px rgba(0,0,0,0.05);
-            transition: transform 0.25s, box-shadow 0.25s;
-        }
-        .service-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 10px 24px rgba(0,0,0,0.08);
-        }
-        .service-card h3 {
-            margin-bottom: 14px;
-            color: #1a365d;
-        }
-
-        /* Process */
-        .process-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
-            gap: 24px;
-            text-align: center;
-        }
-        .step {
-            background: #edf2f7;
-            padding: 24px;
-            border-radius: 10px;
-        }
-        .step span {
-            display: inline-block;
-            width: 46px;
-            height: 46px;
-            line-height: 46px;
-            background: #1a365d;
-            color: white;
-            border-radius: 50%;
-            margin-bottom:14px;
-            font-weight:bold;
-            font-size:18px;
-        }
-
-        /* Categories */
-        .cate-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(170px,1fr));
-            gap:20px;
-            text-align:center;
-        }
-        .cate-item {
-            background:#f7fafc;
-            padding:20px;
-            border-radius:8px;
-            transition: transform 0.25s;
-        }
-        .cate-item:hover {
-            transform: translateY(-4px);
-        }
-
-        /* Testimonial */
-        .testimonial {
-            background:#f0f4f9;
-        }
-        .testi-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(310px,1fr));
-            gap:28px;
-        }
-        .testi-card {
-            background:#fff;
-            padding:28px;
-            border-radius:10px;
-            box-shadow:0 4px 14px rgba(0,0,0,0.05);
-        }
-
-        /* FAQ */
-        .faq-wrap {
-            max-width:840px;
-            margin:0 auto;
-        }
-        .faq-item {
-            margin-bottom:18px;
-            background:#f7fafc;
-            padding:20px;
-            border-radius:8px;
-        }
-        .faq-item h4 {
-            color:#1a365d;
-            margin-bottom:8px;
-        }
-
-        /* Contact */
-        .contact {
-            background:#1a365d;
-            color:#fff;
-            text-align:center;
-        }
-        .contact p {
-            margin-bottom:12px;
-            font-size:17px;
-        }
-        .contact-form-tip{
-            margin:20px auto;
-            max-width:700px;
-            background:rgba(255,255,255,0.1);
-            padding:16px;
-            border-radius:8px;
-        }
-
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom:24px;
-            right:24px;
-            background:#25D366;
-            color:#fff;
-            width:62px;
-            height:62px;
-            border-radius:50%;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            font-size:30px;
-            text-decoration:none;
-            box-shadow:0 4px 16px rgba(0,0,0,0.2);
-            z-index:98;
-            transition: transform 0.2s;
-        }
-        .whatsapp-float:hover{
-            transform: scale(1.05);
-        }
-
-        footer {
-            background:#0f2744;
-            color:#fff;
-            text-align:center;
-            padding:30px 0;
-            font-size:14px;
-        }
-        .footer-note{
-            margin-top:10px;
-            opacity:0.8;
-        }
-
-        /* Mobile */
-        @media(max-width:768px){
-            nav ul {
-                position: absolute;
-                top: 70px;
-                left: 0;
-                width: 100%;
-                background:#1a365d;
-                flex-direction: column;
-                padding:20px;
-                display:none;
-            }
-            nav ul.active {
-                display:flex;
-            }
-            .hamburger {
-                display:block;
-            }
-            .about-wrap {
-                grid-template-columns:1fr;
-            }
-            .hero h1 {
-                font-size:34px;
-            }
-            .hero p {
-                font-size:18px;
-            }
-            .hero{
-                padding:80px 0;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qinglan — Everyday Jewelry &amp; Accessories</title>
+<meta name="description" content="Freshwater pearls, waterproof gold-plated stainless steel, 925 silver and lab-grown gemstone jewelry — photographed as shipped, with tracking on every order. Free shipping over $49 and a 30-day money-back guarantee.">
+<meta name="keywords" content="pearl necklace, waterproof jewelry, tarnish free gold necklace, 925 silver boho jewelry, lab grown sapphire, birthstone necklace, everyday jewelry, gift-ready jewelry">
+<link rel="canonical" href="https://qinglan-export.github.io/qinglan-store/">
+<meta property="og:title" content="Qinglan — Everyday Jewelry &amp; Accessories">
+<meta property="og:description" content="Freshwater pearls, waterproof gold and lab-grown gemstones. Free shipping over $49, 30-day money-back guarantee.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://qinglan-export.github.io/qinglan-store/">
+<meta property="og:image" content="https://qinglan-export.github.io/qinglan-store/assets/img/pearl-flatlay.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23b26552'/><text x='16' y='23' font-size='19' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>Q</text></svg>">
+<style>
+:root{--ink:#33261f;--ink2:#6d5a52;--ink3:#a08d85;--blue:#b26552;--accent:#c08468;--bg:#fffdfb;--alt:#faf1ec;--line:#eadcd4;--green:#4f7d5f;--red:#b5493a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI",system-ui,"Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:15.5px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+.announce{background:var(--blue);color:#fff;text-align:center;padding:9px 14px;font-size:13.5px}
+.announce b{color:#ffe0b8}
+header.site{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:50}
+.nav{display:flex;align-items:center;gap:26px;padding:14px 0}
+.brand{font-size:20px;font-weight:700;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:9px}
+.mark{display:inline-flex;width:30px;height:30px;background:var(--blue);color:#fff;border-radius:8px;align-items:center;justify-content:center;font-size:16px}
+.nav-links{display:flex;gap:20px;margin-left:auto}
+.nav-links a{color:var(--ink2);text-decoration:none;font-size:14.5px}
+.nav-links a:hover{color:var(--blue)}
+.nav-cart{margin-left:6px;background:var(--ink);color:#fff;border:none;border-radius:22px;padding:9px 18px;cursor:pointer;font-size:14px}
+.cart-count{background:var(--accent);color:#fff;border-radius:10px;padding:1px 7px;font-size:12px;margin-left:4px}
+.hero{background:linear-gradient(120deg,#fdf6f1 0%,#f8e7dd 100%);padding:64px 0}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.eyebrow{color:var(--accent);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:12.5px}
+h1{font-size:42px;line-height:1.15;margin:12px 0 16px}
+.hl{color:var(--blue)}
+.hero-sub{color:var(--ink2);max-width:520px}
+.hero-points{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
+.hero-points span{background:#fff;border:1px solid var(--line);border-radius:20px;padding:6px 14px;font-size:13.5px}
+.hero-points i{color:var(--green);font-style:normal;margin-right:5px}
+.btn{display:inline-block;border-radius:26px;padding:12px 26px;text-decoration:none;font-weight:600;font-size:15px;cursor:pointer;border:none}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:#8f4d3d}
+.btn-ghost{background:transparent;color:var(--blue);border:1.5px solid var(--blue)}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-lg{padding:14px 30px;font-size:16px}
+.hero-note{margin-top:16px;font-size:13.5px;color:var(--ink2)}
+.hero-visual{position:relative}
+.hero-visual img,.imgph{width:100%;border-radius:14px;box-shadow:0 14px 40px rgba(120,70,50,.16);aspect-ratio:4/4.4;object-fit:cover}
+.imgph{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f2ddd1,#d9a892);color:#8a5a45;font-size:14px;text-align:center;padding:20px}
+.hero-badge{position:absolute;left:18px;bottom:-20px;background:#fff;border-radius:12px;padding:12px 18px;box-shadow:0 8px 24px rgba(0,0,0,.12);font-size:13.5px;max-width:290px}
+.hero-badge b{display:block;margin-bottom:2px}
+.trustbar{background:var(--ink);color:#e8e8e8;margin-top:52px}
+.trustbar .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:20px 22px;text-align:center;font-size:13.5px}
+.trustbar b{display:block;color:#fff;font-size:14.5px}
+.section{padding:64px 0}
+.section.alt{background:var(--alt)}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 34px}
+.sec-head h2{font-size:28px}
+.sec-head p{color:var(--ink2);margin-top:8px}
+/* category tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:30px}
+.tab{border:1.5px solid var(--line);background:#fff;border-radius:22px;padding:8px 20px;cursor:pointer;font-size:14px;color:var(--ink2)}
+.tab.active{background:var(--blue);border-color:var(--blue);color:#fff}
+/* product cards */
+.grid-products{display:grid;grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:22px}
+.card-p{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s}
+.card-p:hover{box-shadow:0 10px 28px rgba(150,90,70,.12)}
+.card-img{position:relative;background:#f4e6dd}
+.card-img img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.badges{position:absolute;top:10px;left:10px;display:flex;gap:6px}
+.badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;letter-spacing:.03em}
+.b-sale{background:var(--red);color:#fff}
+.b-new{background:var(--blue);color:#fff}
+.b-water{background:var(--green);color:#fff}
+.card-body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:5px;flex:1}
+.card-cat{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+.card-title{font-size:15.5px;font-weight:600}
+.card-tag{font-size:13px;color:var(--ink2);min-height:34px}
+.price-row{margin-top:auto;display:flex;flex-direction:column;gap:1px}
+.price-label{font-size:11.5px;color:var(--ink3)}
+.price{font-size:16.5px;font-weight:700}
+.from{font-size:12px;color:var(--ink3)}
+.compare{font-size:13px;color:var(--ink3);text-decoration:line-through}
+.stars-row{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink3)}
+.stars-row .st{color:#d8c2b4;letter-spacing:2px;font-size:12px}
+.add{margin-top:10px;background:var(--ink);color:#fff;border:none;border-radius:20px;padding:9px 0;font-size:13.5px;cursor:pointer;width:100%}
+.add:hover{background:var(--blue)}
+/* collection feature blocks */
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.feature img,.feature .imgph{border-radius:14px;aspect-ratio:4/3;box-shadow:0 12px 34px rgba(120,70,50,.14)}
+.feature h3{font-size:23px;margin-bottom:10px}
+.feature p{color:var(--ink2);margin-bottom:16px}
+.tick{list-style:none;margin-bottom:18px}
+.tick li{padding-left:26px;position:relative;margin-bottom:7px;font-size:14.5px}
+.tick li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
+.pill-note{display:inline-block;background:#e6f4ea;color:var(--green);font-size:12.5px;border-radius:14px;padding:3px 12px;margin-bottom:12px}
+.pains{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pain{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}
+.pain h3{font-size:16.5px;margin-bottom:8px}
+.pain p{font-size:14px;color:var(--ink2)}
+/* reviews / guarantees */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.review{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}
+.review h3{font-size:16px;margin:8px 0 6px}
+.review p{font-size:14px;color:var(--ink2)}
+.stars{color:var(--accent);font-size:15px;letter-spacing:2px}
+/* faq */
+.faq-list{max-width:760px;margin:0 auto}
+.qa{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 20px;margin-bottom:10px}
+.qa summary{font-weight:600;cursor:pointer}
+.qa p{margin-top:8px;font-size:14.5px;color:var(--ink2)}
+/* newsletter */
+.newsletter{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;background:var(--blue);color:#fff;border-radius:16px;padding:40px 44px}
+.newsletter h2{font-size:24px}
+.newsletter p{opacity:.85;font-size:14.5px;margin-top:6px}
+.nl-form{display:flex;gap:10px}
+.nl-form input{flex:1;border:none;border-radius:24px;padding:13px 20px;font-size:14.5px}
+.nl-msg{font-size:13px;margin-top:8px;min-height:18px}
+/* footer */
+footer.site{background:#2b1c16;color:#d8c5bd;padding:56px 0 30px;font-size:14px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px;margin-bottom:34px}
+footer h4{color:#fff;margin-bottom:12px;font-size:15px}
+footer ul{list-style:none}
+footer li{margin-bottom:8px}
+footer a{color:#c9ced6;text-decoration:none}
+footer a:hover{color:#fff}
+.foot-bottom{border-top:1px solid #463028;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px}
+.payicons span{border:1px solid #5a4036;border-radius:5px;padding:3px 10px;margin-left:6px;font-size:11px;letter-spacing:.05em}
+/* cart drawer */
+.drawer-mask{position:fixed;inset:0;background:rgba(60,35,25,.45);opacity:0;pointer-events:none;transition:.25s;z-index:90}
+.drawer-mask.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:-420px;width:400px;max-width:94vw;height:100%;background:#fff;z-index:100;transition:right .3s;display:flex;flex-direction:column;padding:20px}
+.drawer.open{right:0}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.drawer-close{background:none;border:none;font-size:26px;cursor:pointer;color:var(--ink2)}
+.drawer-items{flex:1;overflow:auto}
+.d-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);align-items:center}
+.d-item .thumb{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,#f2ddd1,#d9a892);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:20px}
+.d-item b{font-size:14px;display:block}
+.d-item small{color:var(--ink3)}
+.qty{display:flex;align-items:center;gap:8px;margin-left:auto}
+.qty button{width:24px;height:24px;border:1px solid var(--line);background:#fff;border-radius:6px;cursor:pointer}
+.drawer-foot{border-top:1px solid var(--line);padding-top:14px}
+.free-ship-hint{font-size:13px;color:var(--ink2);background:var(--alt);border-radius:8px;padding:8px 12px;margin-bottom:12px}
+.sum-row{display:flex;justify-content:space-between;font-size:14.5px;margin-bottom:6px}
+.sum-row.total{font-weight:700;font-size:16px}
+.btn-block{width:100%}
+.drawer-empty{color:var(--ink3);text-align:center;padding:40px 0;font-size:14px}
+@media(max-width:900px){
+.hero-grid,.feature,.newsletter{grid-template-columns:1fr}
+.trustbar .wrap{grid-template-columns:repeat(2,1fr)}
+.pains,.reviews{grid-template-columns:1fr}
+.foot-grid{grid-template-columns:1fr 1fr}
+h1{font-size:32px}
+.nav-links{display:none}
+}
+</style>
 </head>
 <body>
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/86YOURNUMBER" target="_blank" class="whatsapp-float">W</a>
 
-    <header>
-        <div class="container header-wrap">
-            <div class="logo">QINGLAN</div>
-            <div class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#process">Process</a></li>
-                    <li><a href="#categories">Products</a></li>
-                    <li><a href="#testimonial">Reviews</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<div class="announce">Free shipping on orders over <b>$49</b> &nbsp;·&nbsp; 30-day money-back guarantee</div>
 
-    <section class="hero" id="home">
-        <div class="container">
-            <h1>Your Reliable China Sourcing Agent</h1>
-            <p>Based in Guangzhou, we help global importers source auto parts, K tip hair, jewelry and pet supplies. Factory audit, pre-shipment QC and multi-supplier consolidation, all on FOB terms only.</p>
-            <a href="#contact" class="btn">Request Free Sourcing Proposal</a>
-        </div>
-    </section>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#"><span class="mark">Q</span> Qinglan</a>
+    <nav class="nav-links">
+      <a href="#shop">Shop</a>
+      <a href="#waterproof">Waterproof</a>
+      <a href="#gemstone">Birthstones</a>
+      <a href="#why">Why us</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="nav-cart" data-open-cart>Cart <span class="cart-count" data-cart-count>0</span></button>
+  </div>
+</header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Qinglan Import & Export</h2>
-            <div class="about-wrap">
-                <div>
-                    <img src="factory1.jpg" alt="China factory workshop on-site audit">
-                </div>
-                <div class="about-list">
-                    <p>Qinglan is a professional China sourcing team located in Guangzhou. We maintain stable cooperation with over 500 verified manufacturers across China. We serve overseas importers, Amazon sellers and brand owners, helping you find reliable suppliers and reduce procurement risks.</p>
-                    <p>We conduct on-site factory verification and quality checks before shipment. Our logistics service delivers goods to Chinese ports, <strong>FOB terms only. CIF and DDP are not available.</strong></p>
-                    <p>✅ Transparent service with no hidden fees</p>
-                    <p>✅ On-site factory audit & verification</p>
-                    <p>✅ Pre-shipment quality control inspection</p>
-                    <p>✅ Consolidate orders from multiple factories</p>
-                    <p>✅ FOB shipping only to Chinese ports</p>
-                    <p>✅ OEM & ODM customization support</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Everyday jewelry, honestly priced</span>
+      <h1>Jewelry you'll <span class="hl">actually wear</span> — in the shower, the gym, and everywhere after.</h1>
+      <p class="hero-sub">Freshwater pearls, waterproof gold-plated steel, 925 silver and lab-grown gemstones. Every photo shows the real piece, shot in natural light — nothing retouched.</p>
+      <div class="hero-points">
+        <span><i>✓</i>Waterproof &amp; tarnish-free options</span>
+        <span><i>✓</i>Free shipping over $49</span>
+        <span><i>✓</i>Tracking on every order</span>
+        <span><i>✓</i>30-day money back</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" href="#shop">Shop bestsellers</a>
+        <a class="btn btn-ghost btn-lg" href="#gemstone">Birthstone collection</a>
+      </div>
+      <p class="hero-note">Real photos of every piece · Ships with tracking · One-business-day support</p>
+    </div>
+    <div class="hero-visual">
+      <img src="assets/img/pearl-flatlay.jpg" alt="Layered pearl and coin necklace styled on cream silk" onerror="imgFallback(this)">
+      <div class="hero-badge"><b>Layered Pearl &amp; Coin Necklace</b>Freshwater pearls on a pre-layered double chain — one clasp, no tangles</div>
+    </div>
+  </div>
+</section>
 
-    <section id="services" style="background:#f8fafc;">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-grid">
-                <div class="service-card">
-                    <img src="qc1.jpg" alt="Pre shipment quality inspection">
-                    <h3>Product Sourcing</h3>
-                    <p>Match qualified manufacturers according to your product specs, sample development, price negotiation and supplier screening.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Factory Audit</h3>
-                    <p>On-site factory check: production capacity, workshop condition, quality system and certification verification.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Pre-shipment QC</h3>
-                    <p>Inspect goods before loading, check quantity, appearance, dimensions and functions to avoid defective shipments.</p>
-                </div>
-                <div class="service-card">
-                    <img src="consolidate.jpg" alt="Cargo consolidation from multiple suppliers">
-                    <h3>Cargo Consolidation</h3>
-                    <p>Combine orders from different factories into one container, save sea freight for mixed-item purchases.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Export Documentation</h3>
-                    <p>Prepare commercial invoice, packing list and required export papers for FOB shipments.</p>
-                </div>
-                <div class="service-card">
-                    <h3>FOB Logistics</h3>
-                    <p>Arrange trucking and booking to deliver goods to designated Chinese port. <strong>FOB term only.</strong></p>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="trustbar">
+  <div class="wrap">
+    <div><b>Tracked shipping</b>A tracking number for every order</div>
+    <div><b>Waterproof options</b>Steel-core pieces built for daily wear</div>
+    <div><b>Honest photos</b>The photo is the product you receive</div>
+    <div><b>30-day returns</b>Full refund, no interrogation</div>
+  </div>
+</div>
 
-    <section id="process">
-        <div class="container">
-            <h2>Our Working Process</h2>
-            <div class="process-grid">
-                <div class="step">
-                    <span>1</span>
-                    <h3>Submit Inquiry</h3>
-                    <p>Share your product details, quantity and target price.</p>
-                </div>
-                <div class="step">
-                    <span>2</span>
-                    <h3>Supplier Matching</h3>
-                    <p>We screen qualified factories and send quotations.</p>
-                </div>
-                <div class="step">
-                    <span>3</span>
-                    <h3>Sample Confirm</h3>
-                    <p>Arrange samples for quality confirmation before mass order.</p>
-                </div>
-                <div class="step">
-                    <span>4</span>
-                    <h3>Mass Production</h3>
-                    <p>Track production progress and communicate updates.</p>
-                </div>
-                <div class="step">
-                    <span>5</span>
-                    <h3>Pre-shipment QC</h3>
-                    <p>Full inspection before container loading.</p>
-                </div>
-                <div class="step">
-                    <span>6</span>
-                    <h3>Deliver to Port</h3>
-                    <p>Transport goods to Chinese port under FOB terms.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- WHY -->
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="sec-head"><h2>Most online jewelry shops get these three things wrong</h2><p>We built Qinglan around fixing them.</p></div>
+    <div class="pains">
+      <div class="pain"><h3>You wait three weeks and never know where the parcel is</h3><p>Every order from us carries a working tracking number, and if a parcel stalls for more than a few days we reship or refund — your choice.</p></div>
+      <div class="pain"><h3>The photos look nothing like the product</h3><p>We photograph the actual piece in natural light — the same unit that goes in the box — and we don't retouch the metal.</p></div>
+      <div class="pain"><h3>Returns turn into a fight</h3><p>Thirty days, no follow-up questions, no restocking fee. We take it back and pay the return label.</p></div>
+    </div>
+  </div>
+</section>
 
-    <section id="categories" style="background:#f8fafc;">
-        <div class="container">
-            <h2>Product Categories</h2>
-            <div class="cate-grid">
-                <div class="cate-item">Auto Parts</div>
-                <div class="cate-item">K Tip Hair</div>
-                <div class="cate-item">Fashion Jewelry</div>
-                <div class="cate-item">Pet Products</div>
-                <div class="cate-item">Home Goods</div>
-                <div class="cate-item">3C Accessories</div>
-                <div class="cate-item">Outdoor Items</div>
-                <div class="cate-item">Beauty & Apparel</div>
-            </div>
-        </div>
-    </section>
+<!-- SHOP -->
+<section class="section alt" id="shop">
+  <div class="wrap">
+    <div class="sec-head"><h2>Shop all</h2><p>Pearls, waterproof gold, 925 silver and lab-grown gemstones — nothing you need to baby.</p></div>
+    <div class="tabs" data-tabs></div>
+    <div class="grid-products" data-products></div>
+  </div>
+</section>
 
-    <section id="testimonial" class="testimonial">
-        <div class="container">
-            <h2>Client Reviews</h2>
-            <div class="testi-grid">
-                <div class="testi-card">
-                    <p>Qinglan helped me source auto parts for my African market business. They visited the factory and did quality checks. Communication is clear and reliable.</p>
-                    <p style="margin-top:12px;font-weight:bold;">— Importer, East Africa</p>
-                </div>
-                <div class="testi-card">
-                    <p>I purchased K tip hair extensions. They consolidated orders from 2 suppliers into one shipment, saved much cost for me. I will keep cooperation.</p>
-                    <p style="margin-top:12px;font-weight:bold;">— Amazon Seller, USA</p>
-                </div>
-                <div class="testi-card">
-                    <p>Great sourcing support for pet accessories. They are very clear that they only offer FOB terms, no confusion on logistics responsibility.</p>
-                    <p style="margin-top:12px;font-weight:bold;">— Brand Owner, Europe</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- WATERPROOF FEATURE -->
+<section class="section" id="waterproof">
+  <div class="wrap feature">
+    <img src="assets/img/gold-chain.jpg" alt="Waterproof gold-plated stainless steel chain" onerror="imgFallback(this,'Waterproof gold collection')">
+    <div>
+      <span class="pill-note">Tarnish-free · Shower-safe · Sweat-proof</span>
+      <h3>The waterproof collection</h3>
+      <p>Surgical-grade 316L stainless steel with a thick 18k gold plating. Wear it to the pool, the gym, the shower — it keeps its color. This is the tier we recommend if you never want to think about taking jewelry off.</p>
+      <ul class="tick">
+        <li>Steel core — no green skin, no plating peel after weeks</li>
+        <li>Hypoallergenic, nickel-safe finish</li>
+        <li>Complete gift sets: necklace + bracelet + ring</li>
+      </ul>
+      <a class="btn btn-primary" href="#shop" data-jump="waterproof">Shop waterproof →</a>
+    </div>
+  </div>
+</section>
 
-    <section id="faq">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-wrap">
-                <div class="faq-item">
-                    <h4>What trade terms do you offer?</h4>
-                    <p>We only work on FOB terms, delivering goods to Chinese ports. CIF and DDP services are NOT available. The buyer will arrange ocean freight, insurance and destination clearance.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>How much is your sourcing service fee?</h4>
-                    <p>Service cost depends on project complexity and order volume. We provide transparent quotation with no hidden charges after understanding your requirements.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Can you visit factories for inspection?</h4>
-                    <p>Yes. We can perform on-site factory audits and pre-shipment quality inspections to check product quality and production status.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>What is the MOQ?</h4>
-                    <p>MOQ varies for different products. Some factories accept small trial orders, while bulk items require higher minimum quantity. We will confirm MOQ for each supplier.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Can you combine goods from multiple factories?</h4>
-                    <p>Yes, cargo consolidation is one of our core services. We collect goods from different suppliers and ship together under FOB.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Do you support OEM / ODM?</h4>
-                    <p>Yes, we can help you customize packaging, logo and product design according to your drawings or samples.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- GEMSTONE FEATURE -->
+<section class="section alt" id="gemstone">
+  <div class="wrap feature">
+    <div>
+      <span class="pill-note">Real gemstones · Honest price · Clearly labeled lab-grown</span>
+      <h3>The birthstone collection</h3>
+      <p>Genuine lab-grown sapphires, emeralds and rubies — chemically identical to mined stones, grown in a laboratory, and priced without the mining markup. Every piece ships with a lab-grown disclosure card, because honest is the whole point.</p>
+      <ul class="tick">
+        <li>12 birthstones — collect yours and everyone else's</li>
+        <li>Set in 925 sterling silver</li>
+        <li>Gift-ready box, no price on the packing slip</li>
+      </ul>
+      <a class="btn btn-primary" href="#shop" data-jump="gemstone">Find your stone →</a>
+    </div>
+    <img src="assets/img/pearl-dish.jpg" alt="Lab-grown gemstone birthstone jewelry" onerror="imgFallback(this,'Birthstone collection')">
+  </div>
+</section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Email: yourmail@xxx.com</p>
-            <p>WhatsApp: +86 YOUR_PHONE</p>
-            <p>Location: Guangzhou, Guangdong, China</p>
-            <div class="contact-form-tip">
-                <p>📩 Please tell us: product name, required quantity, target price and destination market. We will reply within 24 hours.</p>
-            </div>
-            <form action="https://formspree.io/f/XXXXXXX" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required style="width:100%;max-width:500px;padding:12px;margin:8px 0;border-radius:6px;border:none;font-size:16px;">
-                <input type="email" name="email" placeholder="Your Email" required style="width:100%;max-width:500px;padding:12px;margin:8px 0;border-radius:6px;border:none;font-size:16px;">
-                <textarea name="message" rows="5" placeholder="Tell us your product, quantity and requirements..." required style="width:100%;max-width:500px;padding:12px;margin:8px 0;border-radius:6px;border:none;font-size:16px;"></textarea>
-                <br>
-                <button type="submit" class="btn" style="border:none;cursor:pointer;">Send Inquiry</button>
-            </form>
-        </div>
-    </section>
+<!-- GUARANTEES -->
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="sec-head center"><h2>What we guarantee</h2><p>Three promises we keep on every order.</p></div>
+    <div class="reviews">
+      <div class="review"><div class="stars">★★★</div><h3>30-day money-back guarantee</h3><p>Wear it, test it, live in it. Not right within 30 days? Return and full refund — no hoops.</p></div>
+      <div class="review"><div class="stars">★★★</div><h3>Honest product photography</h3><p>Every photo shows the actual finish, scale and colour we ship. No renders, no borrowed supplier images.</p></div>
+      <div class="review"><div class="stars">★★★</div><h3>Real support, one business day</h3><p>Sizing, plating care or gifting questions — a real person answers within one business day.</p></div>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <div class="container">
-            <p>© 2026 Qinglan Import & Export. All Rights Reserved.</p>
-            <p class="footer-note">All services are provided on FOB terms only. CIF & DDP not available.</p>
-        </div>
-    </footer>
+<!-- FAQ -->
+<section class="section alt" id="faq">
+  <div class="wrap">
+    <div class="sec-head center"><h2>Frequently asked questions</h2></div>
+    <div class="faq-list">
+      <details class="qa" open><summary>How long does shipping take?</summary><p>Orders are dispatched within 1–3 business days after payment. Delivery estimates for your country are shown at checkout, and every order includes a tracking number.</p></details>
+      <details class="qa"><summary>Where do you ship from?</summary><p>We ship worldwide via trusted fulfillment partners and tell you the dispatch origin for your destination at checkout.</p></details>
+      <details class="qa"><summary>What does "waterproof" actually mean?</summary><p>Our waterproof pieces use a 316L stainless steel core with thick 18k gold plating and an anti-tarnish seal. Water, sweat and shower gel won't strip the finish. We still recommend keeping any plated jewelry out of chlorine pools and hot springs.</p></details>
+      <details class="qa"><summary>Are the pearls real?</summary><p>Yes — genuine freshwater pearls, which is why no two are exactly the same size or shape. That irregularity is the look, not a defect.</p></details>
+      <details class="qa"><summary>What are "lab-grown" gemstones?</summary><p>Gemstones grown in a laboratory rather than mined — chemically and optically identical to natural ones, at a fraction of the price. Every gemstone product is labeled lab-grown in the title and ships with a disclosure card. We never sell lab-grown stones as natural.</p></details>
+      <details class="qa"><summary>Is it safe for sensitive ears?</summary><p>Earring posts are hypoallergenic steel; our 925 silver pieces use sterling posts. If you react to plated metals, choose pieces marked "925 silver" or the mother-of-pearl studs with surgical-steel posts.</p></details>
+      <details class="qa"><summary>Does it come gift-ready?</summary><p>Every order ships in a protective box suitable for gifting as-is, and the price is never printed on the packing slip.</p></details>
+      <details class="qa"><summary>Do you ship worldwide?</summary><p>We currently ship to the US, Canada, UK, and the EU. If your country is not listed at checkout, message us and we will check.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="newsletter">
+      <div><h2>Get $5 off your first order</h2><p>One email when new items land or a restock is back. No daily spam, unsubscribe in one click.</p></div>
+      <div>
+        <form class="nl-form" data-newsletter novalidate><input type="email" placeholder="you@example.com" aria-label="Email address" required><button class="btn btn-accent" type="submit">Get code</button></form>
+        <p class="nl-msg" data-nl-msg></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <a class="brand" href="#" style="color:#fff"><span class="mark">Q</span> Qinglan</a>
+        <p style="margin-top:10px">Everyday jewelry — freshwater pearls, waterproof gold-plated steel, 925 silver and lab-grown gemstones, with a 30-day money-back guarantee and tracked shipping. Questions? We answer within one business day.</p>
+        <p style="margin-top:10px">Email: <a href="mailto:yourmail@xxx.com">yourmail@xxx.com</a></p>
+      </div>
+      <div><h4>Shop</h4><ul>
+        <li><a href="#shop" data-jump="pearl">Pearls</a></li>
+        <li><a href="#shop" data-jump="waterproof">Waterproof gold</a></li>
+        <li><a href="#shop" data-jump="silver">925 Silver</a></li>
+        <li><a href="#shop" data-jump="gemstone">Birthstones</a></li>
+        <li><a href="#shop" data-jump="gift">Gifts &amp; under $25</a></li>
+      </ul></div>
+      <div><h4>Help</h4><ul>
+        <li><a href="pages/shipping.html">Shipping &amp; delivery</a></li>
+        <li><a href="pages/refund.html">Returns &amp; refunds</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul></div>
+      <div><h4>Legal</h4><ul>
+        <li><a href="pages/privacy.html">Privacy policy</a></li>
+        <li><a href="pages/terms.html">Terms of service</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Qinglan. All rights reserved.</span>
+      <div class="payicons"><span>VISA</span><span>MASTERCARD</span><span>PAYPAL</span><span>STRIPE</span></div>
+    </div>
+  </div>
+</footer>
+
+<!-- CART -->
+<div class="drawer-mask" data-close-cart></div>
+<aside class="drawer" aria-label="Shopping cart">
+  <div class="drawer-head"><h3>Your cart</h3><button class="drawer-close" data-close-cart>×</button></div>
+  <div class="drawer-items" data-cart-items></div>
+  <div class="drawer-foot">
+    <div class="free-ship-hint" data-ship-hint></div>
+    <div class="sum-row"><span>Subtotal</span><span data-sum-subtotal>$0.00</span></div>
+    <div class="sum-row"><span>Shipping</span><span data-sum-ship>$0.00</span></div>
+    <div class="sum-row total"><span>Total</span><span data-sum-total>$0.00</span></div>
+    <button class="btn btn-accent btn-block btn-lg" style="margin-top:14px" data-checkout>Checkout securely</button>
+    <div id="paypal-buttons" style="margin-top:12px"></div>
+    <p style="font-size:12.5px;color:var(--ink2);text-align:center;margin-top:10px">Card details are handled by Stripe — never stored on this site.</p>
+  </div>
+</aside>
+
+<script src="assets/js/payments.js"></script>
+<script>
+/* ============ DATA ============ */
+const CATS=[
+ {id:"pearl",label:"Pearls"},
+ {id:"waterproof",label:"Waterproof Gold"},
+ {id:"silver",label:"925 Silver"},
+ {id:"gemstone",label:"Birthstones"},
+ {id:"gift",label:"Gifts & Under $25"},
+ {id:"all",label:"Shop All"}
+];
+/* price in USD; compare = strikethrough anchor; from=true → "From $x"
+   img: 文件放在 assets/img/ 下即可显示；缺失时显示占位块 */
+const PRODUCTS=[
+ {id:"p1",cat:"pearl",t:"Layered Pearl & Coin Necklace",tag:"Freshwater pearls on a pre-layered double chain — one clasp, no tangles",price:39,compare:49,img:"assets/img/pearl-flatlay.jpg",badges:["BESTSELLER"]},
+ {id:"p2",cat:"pearl",t:"Baroque Pearl Pendant Necklace",tag:"One irregular baroque pearl on a fine gold chain — no two alike",price:32,img:"assets/img/baroque-layered.jpg",badges:["NEW"]},
+ {id:"p3",cat:"pearl",t:"Mother-of-Pearl Drop Pendant",tag:"Soft shell lustre on a hypoallergenic steel chain",price:26,img:"assets/img/pearl-pendant.jpg"},
+ {id:"p4",cat:"pearl",t:"Pearl Drop Earrings",tag:"Gold-accented freshwater pearls, weightless on the ear",price:24,img:"assets/img/earrings-lifestyle.jpg"},
+ {id:"p5",cat:"pearl",t:"Pearl & Gold Huggie Hoops",tag:"Tiny hoops with a freshwater pearl — stack them, sleep in them",price:22,img:"assets/img/gold-hoops.jpg"},
+
+ {id:"w1",cat:"waterproof",t:"Waterproof Cuban Chain Necklace",tag:"316L steel core, 18k gold plating — shower, gym, pool, repeat",price:34,img:"assets/img/hero.jpg",badges:["WATERPROOF"]},
+ {id:"w2",cat:"waterproof",t:"Paperclip Chain Necklace",tag:"The everyday layering chain that never loses its colour",price:29,img:"assets/img/silver-necklace.jpg",badges:["WATERPROOF"]},
+ {id:"w3",cat:"waterproof",t:"Sun & Moon Celestial Necklace",tag:"Sun, moon and star — a celestial classic that never dates",price:32,img:"assets/img/charm-bracelet.jpg",badges:["WATERPROOF"]},
+ {id:"w4",cat:"waterproof",t:"Botanical Leaf Pendant",tag:"Nature-inspired pendant on a tarnish-free steel chain",price:28,img:"assets/img/pearl-tassel.jpg",badges:["WATERPROOF"]},
+ {id:"w5",cat:"waterproof",t:"Waterproof Gift Set — 3 Pieces",tag:"Necklace + bracelet + ring in one gift box",price:55,compare:72,img:"assets/img/gold-bangles.jpg",badges:["WATERPROOF","SET"]},
+ {id:"w6",cat:"waterproof",t:"CZ Pave Stacking Rings — Set of 3",tag:"Stacked sparkle without the stacked price",price:36,img:"assets/img/rings-hands.jpg",badges:["WATERPROOF"]},
+ {id:"w7",cat:"waterproof",t:"Everyday Waterproof Bracelet",tag:"Add-a-charm base bracelet, sweat-proof finish",price:24,img:"assets/img/hands-jewelry.jpg",badges:["WATERPROOF"]},
+ {id:"w8",cat:"waterproof",t:"Gunmetal Steel Chain",tag:"Black-tone steel — the low-competition alternative finish",price:30,img:"assets/img/seashell-necklace.jpg",badges:["WATERPROOF","NEW"]},
+
+ {id:"s1",cat:"silver",t:"Turquoise Medallion Necklace — 925",tag:"Boho coin medallion set with turquoise on a sterling chain",price:45,img:"assets/img/mop-earrings.jpg",badges:["925 SILVER"]},
+ {id:"s2",cat:"silver",t:"Hammered Boho Earrings — 925",tag:"Hand-finished texture, featherlight sterling posts",price:38,img:"assets/img/gold-earring.jpg",badges:["925 SILVER"]},
+ {id:"s3",cat:"silver",t:"Vintage Silver Coin Necklace — 925",tag:"An heirloom look in solid sterling silver",price:42,img:"assets/img/seashell-necklace.jpg",badges:["925 SILVER"]},
+ {id:"s4",cat:"silver",t:"Oxidised Wide Cuff — 925",tag:"Antique-finish tribal cuff with a modern weight",price:48,img:"assets/img/gold-bangles.jpg",badges:["925 SILVER"]},
+
+ {id:"g1",cat:"gemstone",t:"Birthstone Pendant Necklace",tag:"Lab-grown stone for your month — collect all twelve",price:49,from:true,img:"assets/img/pearl-dish.jpg",badges:["LAB-GROWN"]},
+ {id:"g2",cat:"gemstone",t:"Lab-Grown Sapphire Studs — 925",tag:"September's stone, honestly priced and honestly labeled",price:55,img:"assets/img/gold-earring.jpg",badges:["LAB-GROWN"]},
+ {id:"g3",cat:"gemstone",t:"Lab-Grown Emerald Halo Ring — 925",tag:"Halo-set green stone with a disclosure card in every box",price:69,img:"assets/img/gold-rings.jpg",badges:["LAB-GROWN"]},
+ {id:"g4",cat:"gemstone",t:"Lab-Grown Ruby Bracelet",tag:"July red on a sterling tennis line",price:59,img:"assets/img/charm-bracelet.jpg",badges:["LAB-GROWN"]},
+ {id:"g5",cat:"gemstone",t:"Four-Leaf Clover Gemstone Necklace",tag:"Lab-grown clover pendant — the classic gift that never dates",price:45,img:"assets/img/pearl-tassel.jpg",badges:["LAB-GROWN"]},
+
+ {id:"y1",cat:"gift",t:"Butterfly Pendant Necklace",tag:"Y2K butterfly with coloured CZ wings",price:22,img:"assets/img/hoops-portrait.jpg"},
+ {id:"y2",cat:"gift",t:"Daisy Chain Necklace",tag:"Delicate daisies — Gen Z's favourite starter piece",price:19,img:"assets/img/baroque-choker.jpg"},
+ {id:"y3",cat:"gift",t:"Colourful Beaded Bracelet",tag:"Stackable dopamine beads",price:16,img:"assets/img/charm-bracelet.jpg"},
+ {id:"c1",cat:"gift",t:"Initial Letter Necklace",tag:"Your letter, 26 ways — the evergreen gift",price:34,img:"assets/img/pearl-necklace.jpg"},
+ {id:"c2",cat:"gift",t:"Initial × Birthstone Duo Necklace",tag:"Custom letter with a lab-grown birthstone drop",price:46,from:true,img:"assets/img/baroque-choker.jpg",badges:["CUSTOM","LAB-GROWN"]},
+ {id:"c3",cat:"gift",t:"Handwriting Bracelet — Custom",tag:"Engraved from a photo of real handwriting",price:42,from:true,img:"assets/img/hands-jewelry.jpg",badges:["CUSTOM"]}
+];
+const FREE_SHIP=49;
+
+/* ============ RENDER ============ */
+const fmt=n=>"$"+n.toFixed(2);
+const tabsEl=document.querySelector("[data-tabs]"),gridEl=document.querySelector("[data-products]");
+let activeCat="all";
+function imgFallback(el,label){
+  const d=document.createElement("div");d.className="imgph";
+  d.textContent=label||"Product photo coming soon";
+  el.replaceWith(d);
+}
+window.imgFallback=imgFallback;
+function badgeHtml(p,extra){const bs=[...(p.badges||[])];if(p.compare)bs.unshift("SALE");if(extra)bs.unshift(extra);return bs.length?`<div class="badges">${bs.map(b=>`<span class="badge ${b==="NEW"?"b-new":b==="WATERPROOF"?"b-water":"b-sale"}">${b}</span>`).join("")}</div>`:"";}
+function priceHtml(p){
+  const reg=`<span class="price-label">Regular price${p.from?" From":""} ${fmt(p.compare||p.price)} USD</span>`;
+  if(p.compare)return `<div class="price-row"><span class="compare">${reg}</span><span class="price-label">Sale price${p.from?" From":""}</span><span class="price">${fmt(p.price)} USD</span></div>`;
+  return `<div class="price-row"><span class="price-label">Regular price${p.from?" From":""}</span><span class="price">${fmt(p.price)} USD</span></div>`;
+}
+function starsHtml(){return `<div class="stars-row"><span class="st">★★★★★</span><span>No reviews yet</span></div>`;}
+function cardHtml(p){return `<div class="card-p" data-id="${p.id}">
+  <div class="card-img">${badgeHtml(p)}<img src="${p.img||""}" alt="${p.t}" ${p.img?'':'style="display:none"'} ${p.img?`onerror="imgFallback(this)"`:""}>${p.img?"":`<div class="imgph">Product photo coming soon</div>`}</div>
+  <div class="card-body">
+    <span class="card-title">${p.t}</span>
+    <span class="card-tag">${p.tag}</span>
+    ${starsHtml()}
+    ${priceHtml(p)}
+    <button class="add" data-add="${p.id}">Add to cart</button>
+  </div></div>`;}
+function renderTabs(){
+  tabsEl.innerHTML=CATS.map(c=>`<button class="tab ${c.id===activeCat?"active":""}" data-tab="${c.id}">${c.label}</button>`).join("");
+}
+function renderGrid(){
+  const list=PRODUCTS.filter(p=>activeCat==="all"||p.cat===activeCat);
+  gridEl.innerHTML=list.map(cardHtml).join("");
+}
+renderTabs();renderGrid();
+tabsEl.addEventListener("click",e=>{const b=e.target.closest("[data-tab]");if(!b)return;activeCat=b.dataset.tab;renderTabs();renderGrid();});
+document.querySelectorAll("[data-jump]").forEach(a=>a.addEventListener("click",()=>{
+  const id=a.dataset.jump;if(id&&CATS.some(c=>c.id===id)){activeCat=id;renderTabs();renderGrid();}
+}));
+
+/* ============ CART ============ */
+let cart={};
+try{cart=JSON.parse(localStorage.getItem("ql_cart")||"{}");}catch(e){cart={};}
+function saveCart(){localStorage.setItem("ql_cart",JSON.stringify(cart));renderCart();}
+function addToCart(id){cart[id]=(cart[id]||0)+1;saveCart();}
+function changeQty(id,d){if(!cart[id])return;cart[id]+=d;if(cart[id]<=0)delete cart[id];saveCart();}
+function cartCount(){return Object.values(cart).reduce((a,b)=>a+b,0);}
+function renderCart(){
+  const box=document.querySelector("[data-cart-items]");
+  const ids=Object.keys(cart);
+  if(!ids.length){box.innerHTML=`<div class="drawer-empty">Your cart is empty — the pearls are waiting.</div>`;}
+  else{
+    box.innerHTML=ids.map(id=>{
+      const p=PRODUCTS.find(x=>x.id===id);if(!p)return"";
+      return `<div class="d-item"><div class="thumb">💎</div><div><b>${p.t}</b><small>${fmt(p.price)}</small></div>
+      <div class="qty"><button data-dec="${id}">−</button><span>${cart[id]}</span><button data-inc="${id}">+</button></div></div>`;
+    }).join("");
+  }
+  const sub=ids.reduce((s,id)=>{const p=PRODUCTS.find(x=>x.id===id);return s+(p?p.price*cart[id]:0);},0);
+  const ship=sub===0?0:(sub>=FREE_SHIP?0:5.9);
+  document.querySelector("[data-sum-subtotal]").textContent=fmt(sub);
+  document.querySelector("[data-sum-ship]").textContent=sub===0?"—":(ship===0?"FREE":fmt(ship));
+  document.querySelector("[data-sum-total]").textContent=fmt(sub+ship);
+  document.querySelector("[data-cart-count]").textContent=cartCount();
+  const hint=document.querySelector("[data-ship-hint]");
+  if(sub===0)hint.textContent=`Free shipping on orders over $${FREE_SHIP}.`;
+  else if(sub<FREE_SHIP)hint.textContent=`You're ${fmt(FREE_SHIP-sub)} away from free shipping — add one more piece.`;
+  else hint.textContent=`🎉 You've unlocked free shipping.`;
+}
+document.addEventListener("click",e=>{
+  const add=e.target.closest("[data-add]");if(add){addToCart(add.dataset.add);return;}
+  const inc=e.target.closest("[data-inc]");if(inc){changeQty(inc.dataset.inc,1);return;}
+  const dec=e.target.closest("[data-dec]");if(dec){changeQty(dec.dataset.dec,-1);return;}
+  if(e.target.closest("[data-open-cart]")){document.querySelector(".drawer").classList.add("open");document.querySelector(".drawer-mask").classList.add("open");}
+  if(e.target.closest("[data-close-cart]")){document.querySelector(".drawer").classList.remove("open");document.querySelector(".drawer-mask").classList.remove("open");}
+});
+/* ============ CHECKOUT ============ */
+const money2=n=>n.toFixed(2);
+let paypalRendered=false;
+function loadPayPalSdk(cb){
+  const cfg=window.QL_PAYMENTS||{};
+  if(document.getElementById("paypal-sdk")){cb();return;}
+  const s=document.createElement("script");
+  s.id="paypal-sdk";
+  s.src="https://www.paypal.com/sdk/js?client-id="+encodeURIComponent(cfg.paypalClientId)+"&currency="+(cfg.paypalCurrency||"USD");
+  s.onload=cb;
+  document.body.appendChild(s);
+}
+function renderPayPal(){
+  const cfg=window.QL_PAYMENTS||{};
+  const box=document.getElementById("paypal-buttons");
+  if(!cfg.paypalClientId){box.style.display="none";return;}
+  const ids=Object.keys(cart);
+  if(!ids.length){box.innerHTML="";return;}
+  if(paypalRendered){return;}
+  loadPayPalSdk(()=>{
+    paypal.Buttons({
+      createOrder:(data,actions)=>{
+        const lines=Object.keys(cart);
+        const sub=lines.reduce((s,id)=>{const p=PRODUCTS.find(x=>x.id===id);return s+(p?p.price*cart[id]:0);},0);
+        const ship=sub>=FREE_SHIP?0:((window.QL_PAYMENTS&&window.QL_PAYMENTS.flatShipping)||5.90);
+        const cur=(window.QL_PAYMENTS&&window.QL_PAYMENTS.paypalCurrency)||"USD";
+        return actions.order.create({
+          purchase_units:[{
+            amount:{value:money2(sub+ship),breakdown:{item_total:{value:money2(sub)},shipping:{value:money2(ship)}}},
+            items:lines.map(id=>{const p=PRODUCTS.find(x=>x.id===id);return{
+              name:p.t.slice(0,126),
+              unit_amount:{currency_code:cur,value:money2(p.price)},
+              quantity:String(cart[id]),
+              category:"PHYSICAL_GOODS"};})
+          }]
+        });
+      },
+      onApprove:(data,actions)=>{
+        return actions.order.capture().then(det=>{
+          /* TODO(上线后)：把订单信息发到你邮箱/表格（可接 Make.com 或后端 webhook） */
+          cart={};saveCart();
+          document.querySelector(".drawer").classList.remove("open");
+          document.querySelector(".drawer-mask").classList.remove("open");
+          alert("Payment completed — thank you! Order ref: "+(det.id||"").slice(-8)+"\nA confirmation email will follow.");
+        });
+      }
+    }).render("#paypal-buttons");
+    paypalRendered=true;
+  });
+}
+document.querySelector("[data-checkout]").addEventListener("click",()=>{
+  const cfg=window.QL_PAYMENTS||{};
+  const ids=Object.keys(cart);
+  if(!ids.length){alert("Your cart is empty.");return;}
+  const links=cfg.stripeLinks||{};
+  if(ids.length===1&&links[ids[0]]){
+    const base=links[ids[0]];
+    window.location.href=base+(base.includes("?")?"&":"?")+"quantity="+cart[ids[0]];
+    return;
+  }
+  if(cfg.paypalClientId){
+    renderPayPal();
+    setTimeout(()=>document.getElementById("paypal-buttons").scrollIntoView({behavior:"smooth",block:"center"}),300);
+    return;
+  }
+  alert("Payments are not configured yet.\n\nStore owner: open assets/js/payments.js and add your Stripe Payment Links or PayPal Client ID (see 支付接入清单).");
+});
+renderCart();
+
+/* newsletter */
+document.querySelector("[data-newsletter]").addEventListener("submit",e=>{
+  e.preventDefault();
+  const input=e.target.querySelector("input"),msg=document.querySelector("[data-nl-msg]");
+  if(!input.value||!input.checkValidity()){msg.textContent="Please enter a valid email address.";return;}
+  msg.textContent="Check your inbox — your $5 code is on the way. (Connect Klaviyo form before launch.)";
+  input.value="";
+});
+</script>
 </body>
 </html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qinglan Import & Export | Professional China Sourcing Agent</title>
+    <!-- SEO Meta -->
+    <meta name="description" content="Qinglan Import & Export, Guangzhou China sourcing agent. Specialized in auto parts, K tip hair, jewelry and pet supplies. Factory audit, pre-shipment QC & cargo consolidation on FOB terms only.">
+    <meta name="keywords" content="China sourcing agent, Guangzhou sourcing agent, auto parts import, K tip hair vendor, pet products supplier, jewelry sourcing, FOB shipping China, cargo consolidation, China product inspection">
+    <meta name="author" content="Qinglan Import & Export">
+    <link rel="canonical" href="https://qinglan-export.github.io/qinglan/">
+    <!-- OG Tags for WhatsApp / Facebook share -->
+    <meta property="og:title" content="Qinglan Import & Export | Reliable China Sourcing Agent">
+    <meta property="og:description" content="One-stop China sourcing: factory audit, quality inspection, multi-supplier consolidation. All services on FOB basis only.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://qinglan-export.github.io/qinglan/">
+    <meta property="og:image" content="banner.jpg">
+    <meta property="og:locale" content="en_US">
+    <!-- Schema LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Qinglan Import & Export",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Guangzhou",
+            "addressRegion": "Guangdong",
+            "addressCountry": "CN"
+        },
+        "telephone": "+86 YOUR_PHONE",
+        "email": "yourmail@xxx.com",
+        "url": "https://qinglan-export.github.io/qinglan/",
+        "description": "Guangzhou-based China sourcing agent for auto parts, hair extensions, jewelry and pet goods. Factory audit, pre-shipment QC inspection and cargo consolidation under FOB terms only.",
+        "openingHours": "Mo-Sat 09:00-18:00 CST"
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            color: #333;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        img{
+            max-width:100%;
+            height:auto;
+            border-radius:8px;
+        }
+
+        /* Header & Nav */
+        header {
+            background: #1a365d;
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .header-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.25s;
+        }
+        nav a:hover {
+            color: #4299e1;
+        }
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(rgba(26, 54, 93, 0.82), rgba(26, 54, 93, 0.82)), url("banner.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 110px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 46px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+            max-width: 840px;
+            margin: 0 auto 36px;
+        }
+        .btn {
+            display: inline-block;
+            background: #4299e1;
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.25s, transform 0.2s;
+        }
+        .btn:hover {
+            background: #3182ce;
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 80px 0;
+        }
+        section h2 {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 46px;
+            color: #1a365d;
+        }
+
+        /* About */
+        .about-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .about-list p {
+            margin-bottom: 12px;
+            font-size:17px;
+        }
+
+        /* Service Cards with Hover */
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 28px;
+        }
+        .service-card {
+            background: #fff;
+            padding: 28px;
+            border-radius: 10px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+        }
+        .service-card h3 {
+            margin-bottom: 14px;
+            color: #1a365d;
+        }
+
+        /* Process */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
+            gap: 24px;
+            text-align: center;
+        }
+        .step {
+            background: #edf2f7;
+            padding: 24px;
+            border-radius: 10px;
+        }
+        .step span {
+            display: inline-block;
+            width: 46px;
+            height: 46px;
+            line-height: 46px;
+            background: #1a365d;
+            color: white;
+            border-radius: 50%;
+            margin-bottom:14px;
+            font-weight:bold;
+            font-size:18px;
+        }
+
+        /* Categories */
+        .cate-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px,1fr));
+            gap:20px;
+            text-align:center;
+        }
+        .cate-item {
+            background:#f7fafc;
+            padding:20px;
+            border-radius:8px;
+            transition: transform 0.25s;
+        }
+        .cate-item:hover {
+            transform: translateY(-4px);
+        }
+
+        /* Testimonial */
+        .testimonial {
+            background:#f0f4f9;
+        }
+        .testi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(310px,1fr));
+            gap:28px;
+        }
+        .testi-card {
+            background:#fff;
+            padding:28px;
+            border-radius:10px;
+            box-shadow:0 4px 14px rgba(0,0,0,0.05);
+        }
+
+        /* FAQ */
+        .faq-wrap {
+            max-width:840px;
+            margin:0 auto;
+        }
+        .faq-item {
+            margin-bottom:18px;
+            background:#f7fafc;
+            padding:20px;
+            border-radius:8px;
+        }
+        .faq-item h4 {
+            color:#1a365d;
+            margin-bottom:8px;
+        }
+
+        /* Contact */
+        .contact {
+            background:#1a365d;
+            color:#fff;
+            text-align:center;
+        }
+        .contact p {
+            margin-bottom:12px;
+            font-size:17px;
+        }
+        .contact-form-tip{
+            margin:20px auto;
+            max-width:700px;
+            background:rgba(255,255,255,0.1);
+            padding:16px;
+            border-radius:8px;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom:24px;
+            right:24px;
+            background:#25D366;
+            color:#fff;
+            width:62px;
+            height:62px;
+            border-radius:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:30px;
+            text-decoration:none;
+            box-shadow:0 4px 16px rgba(0,0,0,0.2);
+            z-index:98;
+            transition: transform 0.2s;
+        }
+        .whatsapp-float:hover{
+            transform: scale(1.05);
+        }
+
+        footer {
+            background:#0f2744;
+            color:#fff;
+            text-align:center;
+            padding:30px 0;
+            font-size:14px;
+        }
+        .footer-note{
+            margin-top:10px;
+            opacity:0.8;
+        }
+
+        /* Mobile */
+        @media(max-width:768px){
+            nav ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background:#1a365d;
+                flex-direction: column;
+                padding:20px;
+                display:none;
+            }
+            nav ul.active {
+                display:flex;
+            }
+            .hamburger {
+                display:block;
+            }
+            .about-wrap {
+                grid-template-columns:1fr;
+            }
+            .hero h1 {
+                font-size:34px;
+            }
+            .hero p {
+                font-size:18px;
+            }
+            .hero{
+                padding:80px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/86YOURNUMBER" target="_blank" class="whatsapp-float">W</a>
+
+    <header>
+        <div class="container header-wrap">
+            <div class="logo">QINGLAN</div>
+            <div class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#categories">Products</a></li>
+                    <li><a href="#testimonial">Reviews</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Your Reliable China Sourcing Agent</h1>
+            <p>Based in Guangzhou, we help global importers source auto parts, K tip hair, jewelry and pet supplies. Factory audit, pre-shipment QC and multi-supplier consolidation, all on FOB terms only.</p>
+            <a href="#contact" class="btn">Request Free Sourcing Proposal</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Qinglan Import & Export</h2>
+            <div class="about-wrap">
+                <div>
+                    <img src="factory1.jpg" alt="China factory workshop on-site audit">
+                </div>
+                <div class="about-list">
+                    <p>Qinglan is a professional China sourcing team located in Guangzhou. We maintain stable cooperation with over 500 verified manufacturers across China. We serve overseas importers, Amazon sellers and brand owners, helping you find reliable suppliers and reduce procurement risks.</p>
+                    <p>We conduct on-site factory verification and quality checks before shipment. Our logistics service delivers goods to Chinese ports, <strong>FOB terms only. CIF and DDP are not available.</strong></p>
+                    <p>✅ Transparent service with no hidden fees</p>
+                    <p>✅ On-site factory audit & verification</p>
+                    <p>✅ Pre-shipment quality control inspection</p>
+                    <p>✅ Consolidate orders from multiple factories</p>
+                    <p>✅ FOB shipping only to Chinese ports</p>
+                    <p>✅ OEM & ODM customization support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" style="background:#f8fafc;">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <img src="qc1.jpg" alt="Pre shipment quality inspection">
+                    <h3>Product Sourcing</h3>
+                    <p>Match qualified manufacturers according to your product specs, sample development, price negotiation and supplier screening.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Factory Audit</h3>
+                    <p>On-site factory check: production capacity, workshop condition, quality system and certification verification.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Pre-shipment QC</h3>
+                    <p>Inspect goods before loading, check quantity, appearance, dimensions and functions to avoid defective shipments.</p>
+                </div>
+                <div class="service-card">
+                    <img src="consolidate.jpg" alt="Cargo consolidation from multiple suppliers">
+                    <h3>Cargo Consolidation</h3>
+                    <p>Combine orders from different factories into one container, save sea freight for mixed-item purchases.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Export Documentation</h3>
+                    <p>Prepare commercial invoice, packing list and required export papers for FOB shipments.</p>
+                </div>
+                <div class="service-card">
+                    <h3>FOB Logistics</h3>
+                    <p>Arrange trucking and booking to deliver goods to designated Chinese port. <strong>FOB term only.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process">
+        <div class="container">
+            <h2>Our Working Process</h2>
+            <div class="process-grid">
+                <div class="step">
+                    <span>1</span>
+                    <h3>Submit Inquiry</h3>
+                    <p>Share your product details, quantity and target price.</p>
+                </div>
+                <div class="step">
+                    <span>2</span>
+                    <h3>Supplier Matching</h3>
+                    <p>We screen qualified factories and send quotations.</p>
+                </div>
+                <div class="step">
+                    <span>3</span>
+                    <h3>Sample Confirm</h3>
+                    <p>Arrange samples for quality confirmation before mass order.</p>
+                </div>
+                <div class="step">
+                    <span>4</span>
+                    <h3>Mass Production</h3>
+                    <p>Track production progress and communicate updates.</p>
+                </div>
+                <div class="step">
+                    <span>5</span>
+                    <h3>Pre-shipment QC</h3>
+                    <p>Full inspection before container loading.</p>
+                </div>
+                <div class="step">
+                    <span>6</span>
+                    <h3>Deliver to Port</h3>
+                    <p>Transport goods to Chinese port under FOB terms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" style="background:#f8fafc;">
+        <div class="container">
+            <h2>Product Categories</h2>
+            <div class="cate-grid">
+                <div class="cate-item">Auto Parts</div>
+                <div class="cate-item">K Tip Hair</div>
+                <div class="cate-item">Fashion Jewelry</div>
+                <div class="cate-item">Pet Products</div>
+                <div class="cate-item">Home Goods</div>
+                <div class="cate-item">3C Accessories</div>
+                <div class="cate-item">Outdoor Items</div>
+                <div class="cate-item">Beauty & Apparel</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial" class="testimonial">
+        <div class="container">
+            <h2>Client Reviews</h2>
+            <div class="testi-grid">
+                <div class="testi-card">
+                    <p>Qinglan helped me source auto parts for my African market business. They visited the factory and did quality checks. Communication is clear and reliable.</p>
+                    <p style="margin-top:12px;font-weight:bold;">— Importer, East Africa</p>
+                </div>
+                <div class="testi-card">
+                    <p>I purchased K tip hair extensions. They consolidated orders from 2 suppliers into one shipment, saved much cost for me. I will keep cooperation.</p>
+                    <p style="margin-top:12px;font-weight:bold;">— Amazon Seller, USA</p>
+                </div>
+                <div class="testi-card">
+                    <p>Great sourcing support for pet accessories. They are very clear that they only offer FOB terms, no confusion on logistics responsibility.</p>
+                    <p style="margin-top:12px;font-weight:bold;">— Brand Owner, Europe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-wrap">
+                <div class="faq-item">
+                    <h4>What trade terms do you offer?</h4>
+                    <p>We only work on FOB terms, delivering goods to Chinese ports. CIF and DDP services are NOT available. The buyer will arrange ocean freight, insurance and destination clearance.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How much is your sourcing service fee?</h4>
+                    <p>Service cost depends on project complexity and order volume. We provide transparent quotation with no hidden charges after understanding your requirements.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can you visit factories for inspection?</h4>
+                    <p>Yes. We can perform on-site factory audits and pre-shipment quality inspections to check product quality and production status.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What is the MOQ?</h4>
+                    <p>MOQ varies for different products. Some factories accept small trial orders, while bulk items require higher minimum quantity. We will confirm MOQ for each supplier.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can you combine goods from multiple factories?</h4>
+                    <p>Yes, cargo consolidation is one of our core services. We collect goods from different suppliers and ship together under FOB.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you support OEM / ODM?</h4>
+                    <p>Yes, we can help you customize packaging, logo and product design according to your drawings or samples.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: yourmail@xxx.com</p>
+            <p>WhatsApp: +86 YOUR_PHONE</p>
+            <p>Location: Guangzhou, Guangdong, China</p>
+            <div class="contact-form-tip">
+                <p>📩 Please tell us: product name, required quantity, target price and destination market. We will reply within 24 hours.</p>
+            </div>
+            <form action="https://formspree.io/f/XXXXXXX" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required style="width:100%;max-width:500px;padding:12px;margin:8px 0;border-radius:6px;border:none;font-size:16px;">
+                <input type="email" name="email" placeholder="Your Email" required style="width:100%;max-width:500px;padding:12px;margin:8px 0;border-radius:6px;border:none;font-size:16px;">
+                <textarea name="message" rows="5" placeholder="Tell us your product, quantity and requirements..." required style="width:100%;max-width:500px;padding:12px;margin:8px 0;border-radius:6px;border:none;font-size:16px;"></textarea>
+                <br>
+                <button type="submit" class="btn" style="border:none;cursor:pointer;">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Qinglan Import & Export. All Rights Reserved.</p>
+            <p class="footer-note">All services are provided on FOB terms only. CIF & DDP not available.</p>
+        </div>
+    </footer>
+</body>
+</html>
