@@ -287,7 +287,7 @@ h1{font-size:32px}
 <!-- SHOP ALL -->
 <section class="section alt" id="shop">
   <div class="wrap">
-    <div class="sec-head"><h2>Shop all.</h2><p>The full Lueur catalogue — 48 pieces across five collections, nothing you need to baby.</p></div>
+    <div class="sec-head"><h2>Shop all.</h2><p>The full Lueur catalogue — 20 pieces across five collections, every one photographed as shipped.</p></div>
     <div class="tabs" data-tabs></div>
     <div class="grid-products" data-products></div>
   </div>
@@ -374,14 +374,14 @@ h1{font-size:32px}
         <summary><a href="#shop" data-jump="pearl">Freshwater pearls</a></summary>
         <div class="sub">
           <a href="#shop" data-jump="pearl">Layered Pearl &amp; Coin Necklace</a>
-          <a href="#shop" data-jump="pearl">Baroque Pearl Choker</a>
+          <a href="#shop" data-jump="pearl">Baroque Pearl Pendant Necklace</a>
         </div>
       </details>
       <details>
         <summary><a href="#shop" data-jump="waterproof">Waterproof gold</a></summary>
         <div class="sub">
           <a href="#shop" data-jump="waterproof">Waterproof Gift Set — 3 Pieces</a>
-          <a href="#shop" data-jump="waterproof">Herringbone Chain Necklace</a>
+          <a href="#shop" data-jump="waterproof">Waterproof Cuban Chain Necklace</a>
         </div>
       </details>
       <details>
@@ -402,7 +402,7 @@ h1{font-size:32px}
         <summary><a href="#shop" data-jump="gift">Gifts &amp; personalized</a></summary>
         <div class="sub">
           <a href="#shop" data-jump="gift">Custom Name Necklace</a>
-          <a href="#shop" data-jump="gift">Zodiac Constellation Necklace</a>
+          <a href="#shop" data-jump="gift">Initial Letter Necklace</a>
         </div>
       </details>
     </div>
@@ -587,13 +587,7 @@ const CATS=[
 const PRODUCTS=[
 /* ---- Pearls ---- */
  {id:"p1",cat:"pearl",t:"Layered Pearl & Coin Necklace",tag:"Freshwater pearls on a pre-layered double chain — one clasp, no tangles",price:34,compare:49,imgs:["assets/img/pearl-flatlay.jpg"],badges:["BESTSELLER"]},
- {id:"p2",cat:"pearl",t:"Baroque Pearl Choker",tag:"6-7mm natural baroque pearls — the trending modern pearl, no two alike",price:29,imgs:[],badges:["TRENDING"]},
- {id:"p3",cat:"pearl",t:"Satellite Chain Mother-of-Pearl Pendant",tag:"Textured satellite chain with a soft MOP drop — the Amazon 9.8-star silhouette",price:26,imgs:[],badges:["TRENDING"]},
  {id:"p4",cat:"pearl",t:"Baroque Pearl Pendant Necklace",tag:"One irregular baroque pearl on a fine gold chain",price:27,imgs:["assets/img/baroque-layered.jpg"],badges:["NEW"]},
- {id:"p5",cat:"pearl",t:"Black Pearl Pendant — Gold on Silver",tag:"Dark iridescent pearl, 18k over 925 — the moody-luxe look",price:42,imgs:[],badges:["925 SILVER"]},
- {id:"p6",cat:"pearl",t:"Nine-Pearl Gold Strand",tag:"Nine freshwater pearls spaced on a fine gold chain — the layered look, built in",price:36,imgs:[],badges:["BESTSELLER"]},
- {id:"p7",cat:"pearl",t:"Daisy Pearl Choker",tag:"Hand-beaded daisies with pearl centres — the flower-gift favourite",price:24,imgs:[],badges:["NEW"]},
- {id:"p8",cat:"pearl",t:"Pearl Choker — 925 Silver",tag:"Genuine 6mm freshwater pearls on a sterling chain, adjustable 16-18 inch",price:39,imgs:[],badges:["925 SILVER"]},
  {id:"p9",cat:"pearl",t:"Pearl Drop Earrings",tag:"Gold-accented freshwater pearls, weightless on the ear",price:19,imgs:["assets/img/earrings-lifestyle.jpg"]},
  {id:"p10",cat:"pearl",t:"Pearl & Gold Huggie Hoops",tag:"Tiny hoops with a freshwater pearl — stack them, sleep in them",price:17,imgs:["assets/img/gold-hoops.jpg"]},
 
@@ -601,47 +595,25 @@ const PRODUCTS=[
  {id:"w1",cat:"waterproof",t:"Waterproof Cuban Chain Necklace",tag:"316L steel core, 18k gold plating — shower, gym, pool, repeat",price:28,imgs:["assets/img/hero.jpg"],badges:["WATERPROOF"]},
  {id:"w2",cat:"waterproof",t:"Paperclip Chain Necklace",tag:"The minimalist layering chain that never loses its colour",price:24,imgs:["assets/img/silver-necklace.jpg"],badges:["WATERPROOF"]},
  {id:"w3",cat:"waterproof",t:"Sun & Moon Celestial Necklace",tag:"Sun, moon and star — the celestial search that never cools",price:26,imgs:["assets/img/charm-bracelet.jpg"],badges:["WATERPROOF","TRENDING"]},
- {id:"w4",cat:"waterproof",t:"Herringbone Chain Necklace",tag:"Liquid-gold flat chain, waterproof steel core — the sleek layer",price:27,imgs:[],badges:["WATERPROOF","NEW"]},
  {id:"w5",cat:"waterproof",t:"Waterproof Gift Set — 3 Pieces",tag:"Necklace + bracelet + ring in one gift box",price:46,compare:72,imgs:["assets/img/gold-bangles.jpg"],badges:["WATERPROOF","SET"]},
  {id:"w6",cat:"waterproof",t:"CZ Pave Stacking Rings — Set of 3",tag:"Stacked sparkle without the stacked price",price:29,imgs:["assets/img/rings-hands.jpg"],badges:["WATERPROOF"]},
- {id:"w7",cat:"waterproof",t:"Everyday Charm Bracelet",tag:"Add-a-charm base bracelet, sweat-proof finish",price:19,imgs:[],badges:["WATERPROOF"]},
  {id:"w8",cat:"waterproof",t:"Gunmetal Steel Chain",tag:"Black-tone steel — the low-competition alternative finish",price:24,imgs:["assets/img/seashell-necklace.jpg"],badges:["WATERPROOF"]},
  {id:"w9",cat:"waterproof",t:"Botanical Leaf Pendant",tag:"Nature-inspired pendant on a tarnish-free steel chain",price:22,imgs:["assets/img/pearl-tassel.jpg"],badges:["WATERPROOF"]},
- {id:"w10",cat:"waterproof",t:"Waterproof Box Chain Bracelet",tag:"Clean box links, clasp-tested for daily wear",price:18,imgs:[],badges:["WATERPROOF"]},
- {id:"w11",cat:"waterproof",t:"Evil Eye Steel Bracelet",tag:"Protective blue eye on a waterproof chain — meaning + style",price:20,imgs:[],badges:["WATERPROOF","NEW"]},
- {id:"w12",cat:"waterproof",t:"CZ Solitaire Steel Ring",tag:"One brilliant stone, waterproof setting — the promise-ring price",price:25,imgs:[],badges:["WATERPROOF"]},
 
 /* ---- Miao & 925 silver ---- */
  {id:"m1",cat:"silver",t:"Miao Filigree Butterfly Earrings — 925",tag:"Hand-pierced filigree wings in the Miao silversmith tradition",price:32,imgs:["assets/img/mop-earrings.jpg"],badges:["HANDMADE","NEW"]},
  {id:"m2",cat:"silver",t:"Miao Silver Bell Tassel Earrings — 925",tag:"Tiny bells and sterling tassels — a soft chime with every step",price:29,imgs:["assets/img/gold-earring.jpg"],badges:["HANDMADE"]},
  {id:"m3",cat:"silver",t:"Miao Silver Filigree Bangle — 925",tag:"Open-work filigree cuff, polished bright — heritage craft, daily weight",price:42,imgs:["assets/img/hands-jewelry.jpg"],badges:["HANDMADE"]},
  {id:"m4",cat:"silver",t:"Miao Silver Twist Torque Necklace — 925",tag:"Twisted torque collar with silver loop ends — the statement piece",price:46,imgs:["assets/img/pearl-pendant.jpg"],badges:["HANDMADE"]},
- {id:"m5",cat:"silver",t:"Lotus Filigree Pendant — 925",tag:"Open-work lotus on a fine sterling chain — quiet, botanical, bold",price:38,imgs:[],badges:["HANDMADE"]},
  {id:"m6",cat:"silver",t:"Turquoise Medallion Necklace — 925",tag:"Boho coin medallion set with turquoise on a sterling chain",price:36,imgs:["assets/img/pearl-dish.jpg"],badges:["925 SILVER"]},
- {id:"m7",cat:"silver",t:"Miao Silver Coin Fringe Earrings — 925",tag:"Rows of little silver coins that sway — the signature Miao look",price:34,imgs:[],badges:["HANDMADE"]},
- {id:"m8",cat:"silver",t:"Miao Silver Feather Drop Earrings — 925",tag:"Etched feather drops, light as they look",price:30,imgs:[],badges:["HANDMADE"]},
- {id:"m9",cat:"silver",t:"Miao Silver Star Filigree Studs — 925",tag:"Tiny pierced stars for everyday — the gateway piece to the craft",price:26,imgs:[],badges:["HANDMADE"]},
- {id:"m10",cat:"silver",t:"Miao Silver Vine Wrap Ring — 925",tag:"A climbing vine wrapped around the finger, hand-shaped",price:26,imgs:[],badges:["HANDMADE"]},
 
 /* ---- Lab-grown gemstones ---- */
  {id:"g1",cat:"gemstone",t:"Birthstone Pendant Necklace",tag:"Lab-grown stone for your month — collect all twelve",price:39,from:true,imgs:["assets/img/baroque-choker.jpg"],badges:["LAB-GROWN"]},
  {id:"g2",cat:"gemstone",t:"Lab-Grown Emerald Halo Ring — 925",tag:"Halo-set green stone with a disclosure card in every box",price:55,imgs:["assets/img/gold-rings.jpg"],badges:["LAB-GROWN"]},
- {id:"g3",cat:"gemstone",t:"Lab-Grown Sapphire Studs — 925",tag:"September's stone, honestly priced and honestly labeled",price:44,imgs:[],badges:["LAB-GROWN"]},
- {id:"g4",cat:"gemstone",t:"Lab-Grown Ruby Bracelet",tag:"July red on a sterling tennis line",price:46,imgs:[],badges:["LAB-GROWN"]},
- {id:"g5",cat:"gemstone",t:"Lab-Grown Amethyst Pendant — 925",tag:"February purple on a fine sterling chain",price:36,imgs:[],badges:["LAB-GROWN"]},
- {id:"g6",cat:"gemstone",t:"Lab-Grown Garnet Stud Earrings — 925",tag:"Deep January red, everyday size",price:32,imgs:[],badges:["LAB-GROWN"]},
- {id:"g7",cat:"gemstone",t:"Colourful Gemstone Ear Stack — Set of 3",tag:"Amethyst, garnet and peridot studs — one set, three months",price:42,compare:54,imgs:[],badges:["LAB-GROWN","NEW"]},
- {id:"g8",cat:"gemstone",t:"Sapphire Tennis Bracelet — Lab-Grown, 925",tag:"A full line of blue — the event piece at an honest price",price:52,compare:68,imgs:[],badges:["LAB-GROWN"]},
 
 /* ---- Gifts & personalized ---- */
  {id:"c1",cat:"gift",t:"Custom Name Necklace",tag:"Her name in delicate script — Etsy's #1 jewelry format",price:32,from:true,imgs:["assets/img/pearl-necklace.jpg"],badges:["CUSTOM","BESTSELLER"]},
- {id:"c2",cat:"gift",t:"Initial Letter Necklace",tag:"Your letter, 26 ways — the evergreen personalized gift",price:26,imgs:["assets/img/hoops-portrait.jpg"]},
- {id:"c3",cat:"gift",t:"Family Birthstone Necklace — Custom",tag:"Pick a lab-grown stone for everyone you love, on one chain",price:52,from:true,imgs:[],badges:["LAB-GROWN","CUSTOM"]},
- {id:"c4",cat:"gift",t:"Initial × Birthstone Duo Necklace",tag:"Custom letter with a lab-grown birthstone drop",price:36,from:true,imgs:[],badges:["CUSTOM","LAB-GROWN"]},
- {id:"c5",cat:"gift",t:"Handwriting Bracelet — Custom",tag:"Engraved from a photo of real handwriting",price:32,from:true,imgs:[],badges:["CUSTOM"]},
- {id:"c6",cat:"gift",t:"Engraved Coordinates Bar Necklace",tag:"The latitude and longitude of somewhere that matters",price:30,from:true,imgs:[],badges:["CUSTOM"]},
- {id:"c7",cat:"gift",t:"Zodiac Constellation Necklace",tag:"Twelve star signs, drawn in fine cubic zirconia",price:28,imgs:[],badges:["NEW"]},
- {id:"c8",cat:"gift",t:"Couple's Birthstone Bracelets — Set of 2",tag:"Two stones, two bracelets, one matching pair",price:39,compare:52,imgs:[],badges:["CUSTOM","NEW"]}
+ {id:"c2",cat:"gift",t:"Initial Letter Necklace",tag:"Your letter, 26 ways — the evergreen personalized gift",price:26,imgs:["assets/img/hoops-portrait.jpg"]}
 ];
 const FREE_SHIP=49;
 const FEATURED=["p1","w5","m1","g1"];
@@ -823,5 +795,6 @@ document.querySelector("[data-newsletter]").addEventListener("submit",e=>{
   input.value="";
 });
 </script>
+<script src="assets/js/chat.js"></script>
 </body>
 </html>
