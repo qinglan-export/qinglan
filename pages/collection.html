@@ -40,6 +40,15 @@ header.site{position:sticky;top:0;background:rgba(255,253,251,.97);backdrop-filt
 .col-banner h1{font-size:34px;margin-bottom:10px}
 .col-banner p{color:var(--ink2);max-width:640px;margin:0 auto}
 .col-banner img{width:100%;aspect-ratio:21/7;object-fit:cover;border-radius:14px;margin:22px 0 6px;box-shadow:0 12px 34px rgba(120,70,50,.12);display:block}
+.col-art{width:100%;aspect-ratio:21/7;border-radius:14px;margin:22px 0 6px;box-shadow:0 12px 34px rgba(120,70,50,.12);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.col-art b{font-family:Georgia,serif;font-size:88px;color:rgba(255,255,255,.9);line-height:1}
+.col-art i{position:absolute;font-style:normal;font-size:30px;opacity:.3;color:#fff}
+.col-art.c-all{background:linear-gradient(120deg,#e9c8bc,#c08468 50%,#8d5a48)}
+.col-art.c-pearl{background:linear-gradient(120deg,#f0dccd,#d9b29a 50%,#b28368)}
+.col-art.c-waterproof{background:linear-gradient(120deg,#e8d3a8,#c99a4b 50%,#8a6527)}
+.col-art.c-silver{background:linear-gradient(120deg,#e3e7ea,#aeb7bd 50%,#6f7880)}
+.col-art.c-gemstone{background:linear-gradient(120deg,#d5e5dd,#84b1a0 50%,#4f7466)}
+.col-art.c-gift{background:linear-gradient(120deg,#ecd9d2,#c98d95 50%,#96525c)}
 /* sub-collection strip */
 .subcols{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;padding:14px 0 6px}
 .subcols a{border:1.5px solid var(--line);background:#fff;border-radius:22px;padding:7px 18px;text-decoration:none;color:var(--ink2);font-size:13.5px}
@@ -168,7 +177,7 @@ footer a:hover{color:#fff}
     <div class="col-banner">
       <h1 data-col-title>Shop All Jewelry</h1>
       <p data-col-desc></p>
-      <img data-col-img src="../assets/img/hands-jewelry.jpg" alt="Collection banner" onerror="imgFallback(this)">
+      <div class="col-art c-all" data-col-art><i>✦</i><b>L</b></div>
     </div>
 
     <div class="subcols" data-subcols></div>
@@ -252,12 +261,12 @@ footer a:hover{color:#fff}
 <script>
 /* ============ 集合页（版式对照 Paw&Story collection 页：面包屑+横幅+子类条+数量/排序+网格） ============ */
 const META={
- all:{title:"Shop All Jewelry",desc:"The full Lueur catalogue — every piece photographed as shipped, from our own studio shoots.",img:"../assets/img/hands-jewelry.jpg",note:"<b>Every order, the same promises.</b> Free shipping over $49, dispatch in 1–3 business days with tracking, a gift-ready box, and a 30-day money-back guarantee. Questions before you choose? <a href='../index.html#contact'>Contact our team</a>."},
- pearl:{title:"Freshwater Pearls",desc:"Genuine freshwater pearls for every day — layered chains, pendants and drops. No two exactly alike; that irregularity is the look, not a defect.",img:"../assets/img/pearl-flatlay.jpg",note:"<b>About our pearls.</b> Each pearl is a genuine freshwater gem, which is why sizes and shapes vary slightly between pieces. Wipe with a soft cloth after wearing, keep them away from perfume and chlorine — see our <a href='journal.html#pearl-care'>pearl care guide</a> for the details."},
- waterproof:{title:"Waterproof Gold",desc:"316L stainless steel core with thick 18k gold plating — shower, gym, pool, repeat. It keeps its color.",img:"../assets/img/gold-bangles.jpg",note:"<b>What waterproof means here.</b> A surgical-grade steel core that never turns your skin green, thick plating with an anti-tarnish seal, and a nickel-safe finish. We still recommend keeping plated jewelry out of chlorine pools and hot springs — see our <a href='journal.html#waterproof'>finish comparison guide</a>."},
- silver:{title:"Miao & 925 Silver",desc:"Hand-finished Miao filigree and sterling staples — heritage silversmith craft, light enough for every day.",img:"../assets/img/mop-earrings.jpg",note:"<b>Heritage craft, honestly labeled.</b> Our Miao pieces are hand-pierced and hand-finished in the Guizhou silversmith tradition; every piece marked 925 is sterling silver. Sensitive ears? Sterling posts are the safest choice we ship."},
- gemstone:{title:"Birthstones — Lab-Grown",desc:"Genuine lab-grown gemstones for every month — chemically identical to mined stones, honestly labeled, priced without the mining markup.",img:"../assets/img/gold-rings.jpg",note:"<b>Honest gemstones.</b> Every stone in this collection is lab-grown — chemically and optically identical to natural ones — and every piece ships with a lab-grown disclosure card. We never sell lab-grown stones as natural."},
- gift:{title:"Gifts & Personalized",desc:"Names, letters and engraved details — personalized jewelry that actually gets worn.",img:"../assets/img/pearl-necklace.jpg",note:"<b>Gifting, made simple.</b> Every order ships in a gift-ready box and the price is never printed on the packing slip. For custom pieces, double-check spelling and letter case on the product page before checkout — see our <a href='journal.html#gift-guide'>gift guide</a> for choosing well."}
+ all:{title:"Shop All Jewelry",desc:"The full Lueur catalogue — every piece photographed as shipped, from our own studio shoots.",note:"<b>Every order, the same promises.</b> Free shipping over $49, dispatch in 1–3 business days with tracking, a gift-ready box, and a 30-day money-back guarantee. Questions before you choose? <a href='../index.html#contact'>Contact our team</a>."},
+ pearl:{title:"Freshwater Pearls",desc:"Genuine freshwater pearls for every day — layered chains, pendants and drops. No two exactly alike; that irregularity is the look, not a defect.",note:"<b>About our pearls.</b> Each pearl is a genuine freshwater gem, which is why sizes and shapes vary slightly between pieces. Wipe with a soft cloth after wearing, keep them away from perfume and chlorine — see our <a href='journal.html#pearl-care'>pearl care guide</a> for the details."},
+ waterproof:{title:"Waterproof Gold",desc:"316L stainless steel core with thick 18k gold plating — shower, gym, pool, repeat. It keeps its color.",note:"<b>What waterproof means here.</b> A surgical-grade steel core that never turns your skin green, thick plating with an anti-tarnish seal, and a nickel-safe finish. We still recommend keeping plated jewelry out of chlorine pools and hot springs — see our <a href='journal.html#waterproof'>finish comparison guide</a>."},
+ silver:{title:"Miao & 925 Silver",desc:"Hand-finished Miao filigree and sterling staples — heritage silversmith craft, light enough for every day.",note:"<b>Heritage craft, honestly labeled.</b> Our Miao pieces are hand-pierced and hand-finished in the Guizhou silversmith tradition; every piece marked 925 is sterling silver. Sensitive ears? Sterling posts are the safest choice we ship."},
+ gemstone:{title:"Birthstones — Lab-Grown",desc:"Genuine lab-grown gemstones for every month — chemically identical to mined stones, honestly labeled, priced without the mining markup.",note:"<b>Honest gemstones.</b> Every stone in this collection is lab-grown — chemically and optically identical to natural ones — and every piece ships with a lab-grown disclosure card. We never sell lab-grown stones as natural."},
+ gift:{title:"Gifts & Personalized",desc:"Names, letters and engraved details — personalized jewelry that actually gets worn.",note:"<b>Gifting, made simple.</b> Every order ships in a gift-ready box and the price is never printed on the packing slip. For custom pieces, double-check spelling and letter case on the product page before checkout — see our <a href='journal.html#gift-guide'>gift guide</a> for choosing well."}
 };
 const params=new URLSearchParams(location.search);
 let cat=params.get("cat");
@@ -267,8 +276,9 @@ document.title=meta.title+" — Lueur Jewelry";
 document.querySelector("[data-col-title]").textContent=meta.title;
 document.querySelector("[data-col-desc]").textContent=meta.desc;
 document.querySelector("[data-crumb]").textContent=meta.title;
-const banner=document.querySelector("[data-col-img]");
-banner.src=meta.img;banner.alt=meta.title;
+const banner=document.querySelector("[data-col-art]");
+banner.className="col-art c-"+cat;
+banner.innerHTML='<i>✦</i><b>'+(meta.title.replace(/[^A-Za-z].*$/,"").charAt(0)||"L")+"</b>";
 document.querySelector("[data-col-note]").innerHTML=meta.note;
 /* 子类条 + 导航高亮 */
 const sub=document.querySelector("[data-subcols]");

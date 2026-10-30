@@ -30,10 +30,8 @@ const PRODUCTS=[
  {id:"m2",cat:"silver",t:"Miao Silver Bell Tassel Earrings — 925",tag:"Tiny bells and sterling tassels — a soft chime with every step",price:29,imgs:["assets/img/gold-earring.jpg"],badges:["HANDMADE"]},
  {id:"m3",cat:"silver",t:"Miao Silver Filigree Bangle — 925",tag:"Open-work filigree cuff, polished bright — heritage craft, daily weight",price:42,imgs:["assets/img/hands-jewelry.jpg"],badges:["HANDMADE"]},
  {id:"m4",cat:"silver",t:"Miao Silver Twist Torque Necklace — 925",tag:"Twisted torque collar with silver loop ends — the statement piece",price:46,imgs:["assets/img/pearl-pendant.jpg"],badges:["HANDMADE"]},
- {id:"m6",cat:"silver",t:"Turquoise Medallion Necklace — 925",tag:"Boho coin medallion set with turquoise on a sterling chain",price:36,imgs:["assets/img/pearl-dish.jpg"],badges:["925 SILVER"]},
 
 /* ---- Lab-grown gemstones ---- */
- {id:"g1",cat:"gemstone",t:"Birthstone Pendant Necklace",tag:"Lab-grown stone for your month — collect all twelve",price:39,from:true,imgs:["assets/img/baroque-choker.jpg"],badges:["LAB-GROWN"]},
  {id:"g2",cat:"gemstone",t:"Lab-Grown Emerald Halo Ring — 925",tag:"Halo-set green stone with a disclosure card in every box",price:55,imgs:["assets/img/gold-rings.jpg"],badges:["LAB-GROWN"]},
 
 /* ---- Gifts & personalized ---- */
